@@ -1,29 +1,28 @@
-a:active
-{
+a: active
+{    
+    color: none;
     text-decoration: none;
     underline: none;
-    color: black;
+}
+
+a: hover
+{
+    color: none;
+    text-decoration: none;
+    underline: none;
+}
+
+a: link 
+{
+    color: nome;
+    text-decoration: none;
+    underline: none;
 }
 
 
-a:link
+a: visited
 {
-    underline: none;
+    color: none;
     text-decoration: none;
-    color: black;
-}
-
-a:hover
-{
-    text-decoration: none;
-    underline: none;
-    color: green;
-    
-}
-
-a:visited
-{
-    text-decoration: none;
-    color: black;
     underline: none;
 }
