@@ -14,7 +14,7 @@ a: hover
 
 a: link 
 {
-    color: nome;
+    color: none;
     text-decoration: none;
     underline: none;
 }
