@@ -1,20 +1,20 @@
 a: active
 {    
-    color: none;
+    color: black;
     text-decoration: none;
     underline: none;
 }
 
 a: hover
 {
-    color: none;
+    color: black;
     text-decoration: none;
     underline: none;
 }
 
 a: link 
 {
-    color: none;
+    color: black;
     text-decoration: none;
     underline: none;
 }
@@ -22,7 +22,7 @@ a: link
 
 a: visited
 {
-    color: none;
+    color: black;
     text-decoration: none;
     underline: none;
 }
