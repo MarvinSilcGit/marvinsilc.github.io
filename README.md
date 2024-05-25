@@ -1,3 +1,3 @@
-HTML Content from EDx course: HTML5 and CSS Fundamentals by W3Cx
+HTML content from CodeCademy and HTML5 Notes For Professional
 
 https://marvinsilcgit.github.io/marvinsilc.github.io/
