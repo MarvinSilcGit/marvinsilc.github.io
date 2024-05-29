@@ -1,27 +1,5 @@
-a:active
+a:active, a: hover, a: link, a: visited
 {    
-    color: black;
-    text-decoration: none;
-    underline: none;
-}
-
-a:hover
-{
-    color: black;
-    text-decoration: none;
-    underline: none;
-}
-
-a:link 
-{
-    color: black;
-    text-decoration: none;
-    underline: none;
-}
-
-
-a:visited
-{
     color: black;
     text-decoration: none;
     underline: none;
