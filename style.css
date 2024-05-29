@@ -1,20 +1,20 @@
 a:active
 {    
-    color: black;
+    color: hotpink;
     text-decoration: none;
     underline: none;
 }
 
 a:hover
 {
-    color: black;
+    color: hotpink;
     text-decoration: none;
     underline: none;
 }
 
 a:link 
 {
-    color: black;
+    color: hotpink;
     text-decoration: none;
     underline: none;
 }
@@ -22,7 +22,7 @@ a:link
 
 a:visited
 {
-    color: black;
+    color: hotpink;
     text-decoration: none;
     underline: none;
 }
