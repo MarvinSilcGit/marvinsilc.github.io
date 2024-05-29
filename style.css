@@ -27,6 +27,11 @@ a:visited
     underline: none;
 }
 
+body
+{
+    background-color: #737373;
+    
+}
 #Details, #PrimeiraQuestãoh1, #SegundaQuestãoh1
 {
     text-align: center;
