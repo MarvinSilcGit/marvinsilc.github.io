@@ -1,1 +1,2 @@
-print("aa")
+import arrr
+from pyscript import document
