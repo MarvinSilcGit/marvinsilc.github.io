@@ -1,5 +1,12 @@
-a:active
-{    
+a:link 
+{
+    color: hotpink;
+    text-decoration: none;
+    underline: none;
+}
+
+a:visited
+{
     color: hotpink;
     text-decoration: none;
     underline: none;
@@ -12,15 +19,8 @@ a:hover
     underline: none;
 }
 
-a:link 
-{
-    color: hotpink;
-    text-decoration: none;
-    underline: none;
-}
-
-a:visited
-{
+a:active
+{    
     color: hotpink;
     text-decoration: none;
     underline: none;
