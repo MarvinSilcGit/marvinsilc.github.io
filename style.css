@@ -3,7 +3,6 @@ a:link
     color: hotpink;
     text-decoration: none;
     underline: none;
-    padding: 10px 50 px;
 }
 
 a:visited
@@ -11,7 +10,6 @@ a:visited
     color: hotpink;
     text-decoration: none;
     underline: none;
-    padding: 10px 50 px;
 }
 
 a:hover
@@ -19,7 +17,6 @@ a:hover
     color: hotpink;
     text-decoration: none;
     underline: none;
-    padding: 10px 50 px;
 }
 
 a:active
@@ -27,7 +24,6 @@ a:active
     color: hotpink;
     text-decoration: none;
     underline: none;
-    padding: 10px 50 px;
 }
 
 body
