@@ -2,28 +2,24 @@ a:link
 {
     color: hotpink;
     text-decoration: none;
-    underline: none;
 }
 
 a:visited
 {
     color: hotpink;
     text-decoration: none;
-    underline: none;
 }
 
 a:hover
 {
     color: hotpink;
     text-decoration: none;
-    underline: none;
 }
 
 a:active
 {    
     color: hotpink;
     text-decoration: none;
-    underline: none;
 }
 
 body
