@@ -21,3 +21,8 @@ a:active
     color: black;
     text-decoration: none;
 }
+
+#tituloPrincipal
+{
+    font-family: Garamond, serif;
+}
