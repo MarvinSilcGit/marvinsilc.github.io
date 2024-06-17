@@ -26,3 +26,9 @@ a:active
 {
     font-family: Garamond, serif;
 }
+
+header
+{
+    background-color: #ff9966;
+    opacity: 0.6;
+}
