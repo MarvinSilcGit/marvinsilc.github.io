@@ -41,8 +41,9 @@ header
 
 figure
 {
-    margin-left: auto;
-    margin-right: autor;
-    width: 50%;
     display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    background-color: 
 }
