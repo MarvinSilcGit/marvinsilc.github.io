@@ -38,3 +38,11 @@ header
     background-color: hotpink;
     
 }
+
+figure
+{
+    margin-left: auto;
+    margin-right: autor;
+    width: 50%;
+    display: block;
+}
