@@ -29,13 +29,13 @@ a:active
 
 header
 {
-    background-color: #ff9966;
+    background-color: #ff7733;
     opacity: 0.6;
 }
 
 #paragrafoTituloPrincipal
 {
-    background-color: hotpink;
+    background-color: #ff7733;
     
 }
 
@@ -44,5 +44,5 @@ figure
     display: block;
     margin-left: auto;
     margin-right: auto;
-    background-color: 
+    background-color: #ff7733;
 }
