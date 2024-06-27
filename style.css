@@ -38,3 +38,9 @@ p
 {
     text-align: justify;
 }
+
+img
+{
+    ax-width: 100%;
+    height: auto;
+}
