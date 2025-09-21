@@ -2,6 +2,8 @@ html
 {
 	scroll-behavior: smooth;
     flex-direction: column;
+    display: flex;
+    text-align: center;
 }
 
 a:link 
