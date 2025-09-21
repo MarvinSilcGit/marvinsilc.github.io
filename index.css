@@ -1,14 +1,11 @@
 html
 {
 	scroll-behavior: smooth;
-    flex-direction: column;
-    display: flex;
-    text-align: center;
 }
 
-a:link 
+a:link
 {
-    color: hotpink;
+    color: blue;
     text-decoration: none;
 }
 
@@ -25,7 +22,7 @@ a:hover
 }
 
 a:active
-{    
+{
     color: hotpink;
     text-decoration: none;
 }
