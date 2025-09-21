@@ -1,6 +1,7 @@
 html
 {
 	scroll-behavior: smooth;
+    flex-direction: column;
 }
 
 a:link 
