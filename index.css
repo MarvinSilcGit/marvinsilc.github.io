@@ -8,27 +8,26 @@ a{
     display: block;
 }
 
-a:link
-{
+a:link {
+
     color: blue;
     text-decoration: none;
 }
 
-a:visited
-{
-    color: hotpink;
+a:visited {
+
+    color: black;
     text-decoration: none;
 }
 
-a:hover
-{
-    color: hotpink;
+a:hover {
+
+    color: white;
     text-decoration: none;
 }
 
-a:active
-{
-    color: hotpink;
+a:active {
+    color: bisque;
     text-decoration: none;
 }
 
@@ -38,25 +37,21 @@ body
 }
 
 #Details, #PrimeiraAtividadeh1, #SegundaAtividadeh1, #TerceiraAtividadeh1,
-#QuartaAtividadeh1
-{
+#QuartaAtividadeh1 {
     text-align: center;
     color: hotpink;
 }
 
-p
-{
+p {
     text-align: justify;
 }
 
-img
-{
+img {
     max-width: 100%;
     height: auto;
 }
 
-.mapouter
-{
+.mapouter {
     display: block;
     margin-left: auto;
     margin-right: auto;
