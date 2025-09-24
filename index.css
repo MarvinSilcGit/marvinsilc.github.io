@@ -3,6 +3,11 @@ html
 	scroll-behavior: smooth;
 }
 
+a{
+
+    display: block;
+}
+
 a:link
 {
     color: blue;
