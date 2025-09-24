@@ -31,13 +31,14 @@ a:active {
     text-decoration: none;
 }
 
-body
-{
+body {
+
     background-color: yellow;
 }
 
 #Details, #PrimeiraAtividadeh1, #SegundaAtividadeh1, #TerceiraAtividadeh1,
 #QuartaAtividadeh1 {
+
     text-align: center;
     color: hotpink;
 }
