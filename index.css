@@ -58,3 +58,44 @@ img {
     margin-right: auto;
     width: 50%;
 }
+
+h1{
+
+    color: green;
+    text-align: center;
+}
+
+h2{
+    color: red;
+    text-align: right;
+}
+
+h3{
+    color: violet;
+    text-align: left;
+}
+
+b{
+    color: aqua;
+}
+
+em{
+    color: chocolate;
+}
+
+strong{
+    color: darkred;
+}
+
+sub{
+    color: rosybrown;
+}
+
+sup{
+    color: chartreuse;
+}
+
+mark{
+    color: white;
+    background-color: blue;
+}
