@@ -24,9 +24,17 @@
 
     <header>
 
-        <p>Última Modificação em: </p>
+        <p style="display: inline">Última Modificação em: </p>
 
-        <p id="last_mod"></p>
+        <p id="last_mod" style ="display: inline"></p>
+
+        <script>
+
+            let ultima_modificacao = document.lastModified;
+
+            document.getElementById("last_mod").innerHTML = ultima_modificacao;
+
+        </script>
 
     </header>
 
