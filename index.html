@@ -1,109 +1,103 @@
 <!DOCTYPE html>
 
 <html lang ="pt-br">
+
+    <head>
     
-<head>
-
-    <meta charset ="utf-8">
-
-    <meta name ="author" content="Marvin Silc">
-
-    <meta name ="viewport" content ="width=device-width,initial-scale=1"/>
-
-    <link rel ="shortcut icon" type ="image/x-icon" href ="./images/favicon.ico">
-
-    <link rel ="stylesheet" type ="text/css" href ="index.css">
-
-    <script src="./index.js"></script>
-
-    <title>Página Inicial</title>
-    
-</head>
-
-<body>
-
-    <header>
-
-        <p style="display: inline">Última Modificação em: </p>
-
-        <p id="last_mod" style ="display: inline"></p>
-
-        <script>
-
-            let ultima_modificacao = document.lastModified;
-
-            document.getElementById("last_mod").innerHTML = ultima_modificacao;
-
-        </script>
-
-    </header>
-
-    <main>
-
-    <nav>
-
-        <a href ="./logica.html">Atividades de Lógica </a>
-
-        <a href ="./so.html">Atividades de Sistemas Operacionais</a>
-
-        <a href ="./bd.html">Atividades de Banco de Dados </a>
-
-        <a href ="./test.html">Página de testes</a>
-
-        <a href ="https://www.google.com">Google</a>
-
-        <a href ="https://www.youtube.com">Youtube</a>
-
-    </nav>
-
-        <p id="demo" onclick="mudar_conteudo_elemento()">olá</p>
-
-        <h1 id="h1">Título principal da página: h1 somente um por página</h1>
-
-        <h2 id="h2">Subtítulo da página: h2 alguns por página</h2>
-
-        <h3 id="h3">Título de tópicos: h3 vários por página</h3>
-
-        <p id="b">Elemento b é utilizado para dar <b>destaque</b></p>
-
-        <p id="em">Elemento em é utilizado para dar <em>Ênfase</em></p>
-
-        <p id="strong">Elemento strong é utilizado para dar <strong>importância</strong></p>
-
-        <p id="sub">Elemento sub é utilizado na química H<sub>2</sub>O</p>
-
-        <p id="sup">Elemento sup é utilizado na matemática 3<sup>2</sup></p>
-
-        <p id="mark">Elemento mark é utilizado para marcar <mark>frases</mark></p>
-
-        <p id ="paragrafo" onclick="mudar_cor_elemento()">Clique para mudar cor</p>
-
-        <pre class="line-numbers"><code class="language-python">
-            if 5 > 2:
-
-                print('ok')
-
-            else:
-
-                print('not ok')
-        </code></pre>
+        <meta charset ="utf-8">
         
-        <pre class="line-numbers">
-            
-            <code class="language-html">
-            
-                <html lang = "pt-br">
-            
-            
-            
-                </html>
-            
-        </code>
+        <meta name ="author" content="Marvin Silc">
+        
+        <meta name ="viewport" content ="width=device-width,initial-scale=1"/>
+        
+        <link rel ="shortcut icon" type ="image/x-icon" href ="./images/favicon.ico">
+        
+        <link rel ="stylesheet" type ="text/css" href ="index.css">
+        
+        <link href="./Prism.css" rel="stylesheet"/>
+        
+        <script src="./Prism.js"></script>
+        
+        <script src="./index.js"></script>
+        
+        <title>Página Inicial</title>
+    
+    </head>
 
-        </pre>
+    <body data-prismjs-copy-timeout="500">
+    
+        <header>
+        
+            <p style="display: inline">Última Modificação em: </p>
+        
+            <p id="last_mod" style ="display: inline"></p>
+        
+            <script>
+        
+                let ultima_modificacao = document.lastModified;
+        
+                document.getElementById("last_mod").innerHTML = ultima_modificacao;
+        
+            </script>
+        
+        </header>
+    
+        <main>
+        
+            <nav>
+            
+                <a href ="./logica.html">Atividades de Lógica </a>
+            
+                <a href ="./so.html">Atividades de Sistemas Operacionais</a>
+            
+                <a href ="./bd.html">Atividades de Banco de Dados </a>
+            
+                <a href ="./test.html">Página de testes</a>
+            
+                <a href ="https://www.google.com">Google</a>
+            
+                <a href ="https://www.youtube.com">Youtube</a>
+            
+            </nav>
+        
+            <p id="demo" onclick="mudar_conteudo_elemento()">olá</p>
+        
+            <h1 id="h1">Título principal da página: h1 somente um por página</h1>
+        
+            <h2 id="h2">Subtítulo da página: h2 alguns por página</h2>
+        
+            <h3 id="h3">Título de tópicos: h3 vários por página</h3>
+        
+            <p id="b">Elemento b é utilizado para dar <b>destaque</b></p>
+        
+            <p id="em">Elemento em é utilizado para dar <em>Ênfase</em></p>
+        
+            <p id="strong">Elemento strong é utilizado para dar <strong>importância</strong></p>
+        
+            <p id="sub">Elemento sub é utilizado na química H<sub>2</sub>O</p>
+        
+            <p id="sup">Elemento sup é utilizado na matemática 3<sup>2</sup></p>
+        
+            <p id="mark">Elemento mark é utilizado para marcar <mark>frases</mark></p>
+        
+            <p id ="paragrafo" onclick="mudar_cor_elemento()">Clique para mudar cor</p>
+        
+            <pre class="line-numbers" data-line="1-5">
+                
+                <code class="language-python" data-prismjs-copy="Clique para copiar o código acima">
+                if 5 > 2:
+                
+                    print('ok')
+                
+                else:
+                
+                    print('not ok')
+                </code>
+            
+            </pre>
+        
+        </main>
+    
+    </body>
 
-    </main>
-
-</body>
-  
 </html>
