@@ -28,3 +28,10 @@ function mudar_cor_pagina(){
 
   });
 }
+
+function ultima_modificacao_pagina(){
+
+  let ultima_modificacao = document.lastModified;
+
+  document.getElementById("last_mod").innerHTML = ultima_modificacao;
+}
