@@ -299,6 +299,7 @@ pre[class*="language-"].line-numbers > code {
 
 div.code-toolbar {
 	position: relative;
+    min-width: 10px;
 }
 
 div.code-toolbar > .toolbar {
@@ -306,9 +307,9 @@ div.code-toolbar > .toolbar {
 	
     z-index: 10;
 	
-    top: 0em;
+    top: -0.08em;
 	
-    right: .8em;
+    right: 2em;
 	
     transition: opacity 0.5s ease-in-out;
 	
