@@ -28,3 +28,7 @@ function mudar_cor_pagina(){
 
   });
 }
+
+function copiar_codigo(){
+  
+}
