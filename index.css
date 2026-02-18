@@ -6,6 +6,10 @@ html {
 body {
 
     background-color: #f5f5f7;
+    
+    margin-top: 2vw;
+    
+    font-family: 'Avenir Next', 'Avenir', 'Arial', sans-serif;
 }
 
 #code_block {
@@ -17,4 +21,57 @@ main {
 
     max-width: 900px;
     margin: auto;
+}
+
+h1{
+    text-align: center;
+    font-weight: 600;
+    color: #32373f;
+}
+
+h2::after,h3::after,h4::after,h5::after,h6::after{
+    content: ":";
+}
+
+h2,h3,h4,h5,h6{
+    
+    text-align: left;
+    
+    color: #32373f;
+}
+
+p{
+
+    color: #32373f;
+    
+    text-align: justify;
+    
+    line-height: 1.5;
+}
+
+#última_atualização{
+    
+    max-width: 900px;
+    
+    margin: auto auto 3vw; 
+    /*
+    Same as:
+    margin: auto;
+    margin-bottom: 3vw;*/
+}
+
+codigo{
+    
+    color: #cc0029;
+    display: inline;
+    background-color: #E8E8E8;
+    border-radius: 8px;
+    padding: 2px 5px;
+
+    /*
+    Same as:
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 2px;
+    padding-bottom: 2px;*/
 }

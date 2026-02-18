@@ -29,37 +29,51 @@
 	<body data-prismjs-copy-timeout="1500">
 	
 		<header>
-		
-			<p style="display: inline">Última Modificação em: </p>
-			
-			<p id="last_mod" style ="display: inline"></p>
-			
-			<script>
-				
-				let ultima_modificacao = document.lastModified;
-				
-				document.getElementById("last_mod").innerHTML = ultima_modificacao;
-			
-			</script>
+      
+      <section id ="última_atualização">
+        
+        <p style ="display: inline">Última Modificação em: </p>
+        
+        <p id ="last_mod" style ="display: inline"></p>
+        
+        <script>
+          
+          let ultima_modificacao = document.lastModified;
+          
+          document.getElementById("last_mod").innerHTML = ultima_modificacao;
+        
+        </script>
+        
+      </section>
 			
 		</header>
 	
 		<main>
+      
+      <h1>HTML & CSS: básico do básico com h1, h2, h3 e p</h1>
+      
+      <h2>Exemplo básico</h2>
 
-		<pre id ="code_block" class ="line-numbers" data-line="1,5">
-		
-      <code id ="teste" class ="language-python" data-prismjs-copy="Copiar Código">
-      if 5 > 2:
+      <pre id ="code_block" class ="line-numbers" data-line ="1,5">
+      
+        <code id ="teste" class ="language-python" data-prismjs-copy ="Copiar Código">
+        if 5 > 2:
+  
+            print('ok')
+  
+        else:
+  
+            print('not ok')
+        </code>
+      
+      </pre>
+      
+      <p>Os elementos <codigo>h2</codigo> e <codigo>h3</codigo> são usados para definir títulos e subtítulos da principais seções de uma página web.
+        O h1 é como se fosse o título, os elementos h2 são os capítulos e os elementos h3 são seções dos capítulos.
+        Utilize somente um h1 por página, já o h2 e h3 pode ser utilizados bem mais vezes.</p>
+      
+      <p>O elemento <codigo>mark</codigo></p>
 
-          print('ok')
-
-      else:
-
-          print('not ok')
-      </code>
-		
-		</pre>
-		
 		</main>
 	
 	</body>
