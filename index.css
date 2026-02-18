@@ -1,120 +1,32 @@
-html{
+html {
 
 	scroll-behavior: smooth;
 }
 
-a{
-
-    display: block;
-}
-
-a:link {
-
-    color: blue;
-    text-decoration: none;
-}
-
-a:visited {
-
-    color: black;
-    text-decoration: none;
-}
-
-a:hover {
-
-    color: white;
-    text-decoration: none;
-}
-
-a:active {
-    color: bisque;
-    text-decoration: none;
-}
-
 body {
 
-    background-color: yellow;
+    background-color: #fafafa;
 }
 
-#Details, #PrimeiraAtividadeh1, #SegundaAtividadeh1, #TerceiraAtividadeh1,
-#QuartaAtividadeh1 {
-
-    text-align: center;
-    color: hotpink;
-}
-
-p {
-    text-align: justify;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-}
-
-.mapouter {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-}
-
-h1{
-
-    color: green;
-    text-align: center;
-}
-
-h2{
-    color: red;
-    text-align: right;
-}
-
-h3{
-    color: violet;
-    text-align: left;
-}
-
-b{
-    color: aqua;
-}
-
-em{
-    color: chocolate;
-}
-
-strong{
-    color: darkred;
-}
-
-sub{
-    color: rosybrown;
-}
-
-sup{
-    color: chartreuse;
-}
-
-mark{
-    color: white;
-    background-color: blue;
-}
-
-#botao_code_block{
+#botao_code_block {
   position: absolute;
   top: 0.5em;
   right: 0.5em;
   padding: 0.5em 1em;
-  font-size: 14px;
+  font-size: 16px;
   background-color: #333;
-  color: #fff;
+  color: white;
   border: none;
   border-radius: 4px;
   cursor: pointer;
 }
 
-#code_block{
-    box-shadow: 0 2px 20px 1px #333;
+#code_block {
+    box-shadow: 0 2px 20px 1px white;
+}
 
+main {
 
+    max-width: 900px;
+    margin: auto;
 }
