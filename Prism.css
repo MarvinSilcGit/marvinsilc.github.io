@@ -12,13 +12,13 @@ pre[class*="language-"] {
 	background: none;
 	text-shadow: 0 1px rgba(0, 0, 0, 0.3);
 	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
-	font-size: 1em;
+	font-size: 1.2em;
 	text-align: left;
 	white-space: pre;
 	word-spacing: normal;
 	word-break: normal;
 	word-wrap: normal;
-	line-height: 1.5;
+	line-height: 1.2;
 
 	-moz-tab-size: 4;
 	-o-tab-size: 4;
@@ -35,7 +35,7 @@ pre[class*="language-"] {
 	padding: 1em;
 	margin: .5em 0;
 	overflow: auto;
-	border-radius: 0.3em;
+	border-radius: 1em;
 }
 
 :not(pre) > code[class*="language-"],
@@ -75,7 +75,7 @@ pre[class*="language-"] {
 
 .token.boolean,
 .token.number {
-	color: #ae81ff;
+	color: yellow;
 }
 
 .token.selector,
@@ -232,7 +232,7 @@ pre[class*="language-"].line-numbers > code {
 			content: counter(linenumber);
 			color: #999;
 			display: block;
-			padding-right: 0.8em;
+			padding-right: 1em;
 			text-align: right;
 		}
 
@@ -243,10 +243,10 @@ div.code-toolbar {
 div.code-toolbar > .toolbar {
 	position: absolute;
 	z-index: 10;
-	top: .3em;
-	right: .2em;
-	transition: opacity 0.3s ease-in-out;
-	opacity: 0;
+	top: .5em;
+	right: .5em;
+	transition: opacity 0.5s ease-in-out;
+	opacity: 50%;
 }
 
 div.code-toolbar:hover > .toolbar {
@@ -271,7 +271,7 @@ div.code-toolbar > .toolbar > .toolbar-item > button {
 	background: none;
 	border: 0;
 	color: inherit;
-	font: inherit;
+    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
 	line-height: normal;
 	overflow: visible;
 	padding: 0;
@@ -283,9 +283,9 @@ div.code-toolbar > .toolbar > .toolbar-item > button {
 div.code-toolbar > .toolbar > .toolbar-item > a,
 div.code-toolbar > .toolbar > .toolbar-item > button,
 div.code-toolbar > .toolbar > .toolbar-item > span {
-	color: #bbb;
-	font-size: .8em;
-	padding: 0 .5em;
+	color: white;
+	font-size: 1em;
+	padding: 0 .9em;
 	background: #f5f2f0;
 	background: rgba(224, 224, 224, 0.2);
 	box-shadow: 0 2px 0 0 rgba(0,0,0,0.2);

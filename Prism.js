@@ -4769,8 +4769,8 @@ Prism.languages.sql = {
 		/** @type {Settings} */
 		var settings = {
 			'copy': 'Copy',
-			'copy-error': 'Press Ctrl+C to copy',
-			'copy-success': 'Copied!',
+			'copy-error': 'Utilize Ctrl+C para copiar',
+			'copy-success': 'Copiado!',
 			'copy-timeout': 5000
 		};
 
