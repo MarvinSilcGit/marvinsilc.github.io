@@ -1,69 +1,69 @@
 <!DOCTYPE html>
 
-<html lang ="pt-br">
+	<html lang ="pt-br">
 
-    <head>
-    
-        <meta charset ="utf-8">
-        
-        <meta name ="author" content="Marvin Silc">
-        
-        <meta name ="viewport" content ="width=device-width,initial-scale=1"/>
-        
-        <link rel ="shortcut icon" type ="image/x-icon" href ="./images/favicon.ico">
-        
-        <link rel ="stylesheet" type ="text/css" href ="index.css">
-        
-        <link href="./Prism.css" rel="stylesheet"/>
-        
-        <script src="./Prism.js"></script>
-        
-        <script src="./index.js"></script>
-        
-        <title>Página Inicial</title>
-    
-    </head>
+		<head>
+		
+		<meta charset ="utf-8">
+		
+		<meta name ="author" content="Marvin Silc">
+		
+		<meta name ="viewport" content ="width=device-width,initial-scale=1"/>
+		
+		<link rel ="shortcut icon" type ="image/x-icon" href ="./images/favicon.ico">
+		
+		<link rel ="stylesheet" type ="text/css" href ="index.css">
+		
+		<link href="./Prism.css" rel="stylesheet"/>
+		
+		<script src="./Prism.js"></script>
+		
+		<script src="./index.js"></script>
+		
+		<title>Página Inicial</title>
+		
+		</head>
 
-    <body data-prismjs-copy-timeout="500">
-    
-        <header>
-        
-            <p style="display: inline">Última Modificação em: </p>
-        
-            <p id="last_mod" style ="display: inline"></p>
-        
-            <script>
-        
-                let ultima_modificacao = document.lastModified;
-        
-                document.getElementById("last_mod").innerHTML = ultima_modificacao;
-        
-            </script>
-        
-        </header>
-    
-        <main>
-        
-            <p id ="demo" onclick ="mudar_conteudo_elemento()">olá</p>
-        
-            <p id ="paragrafo" onclick ="mudar_cor_elemento()">Clique para mudar cor</p>
-        
-            <pre id ="code_block" class ="line-numbers" data-line="1,5">
-                
-                <code id ="teste" class ="language-python" data-prismjs-copy="Copiar Código">
-                if 5 > 2:
-                
-                    print('ok')
-                
-                else:
-                
-                    print('not ok')
-                </code>
-              <button id ="botao_code_block" onclick ="copiar_codigo()">copiar</button>
-            </pre>
-        
-        </main>
-    
-    </body>
+	<body data-prismjs-copy-timeout="500">
+	
+		<header>
+		
+			<p style="display: inline">Última Modificação em: </p>
+			
+			<p id="last_mod" style ="display: inline"></p>
+			
+			<script>
+				
+				let ultima_modificacao = document.lastModified;
+				
+				document.getElementById("last_mod").innerHTML = ultima_modificacao;
+			
+			</script>
+			
+		</header>
+	
+		<main>
+			
+			<p id ="demo" onclick ="mudar_conteudo_elemento()">olá</p>
+			
+			<p id ="paragrafo" onclick ="mudar_cor_elemento()">Clique para mudar cor</p>
+			
+			<pre id ="code_block" class ="line-numbers" data-line="1,5">
+			
+			<code id ="teste" class ="language-python" data-prismjs-copy="Copiar Código">
+			if 5 > 2:
+			
+			    print('ok')
+			
+			else:
+			
+			    print('not ok')
+			</code>
+			
+			</pre>
+		
+		</main>
+	
+	</body>
 
 </html>
