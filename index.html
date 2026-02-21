@@ -27,8 +27,26 @@
 		</head>
 
 	<body data-prismjs-copy-timeout="1500">
-	
+
 		<header>
+      
+      <section id ="última_atualização">
+      
+        <p style ="display: inline">Última Modificação em: </p>
+        
+        <p id ="last_mod" style ="display: inline"></p>
+        
+        <script>
+          
+          let ultima_modificacao = document.lastModified;
+          
+          document.getElementById("last_mod").innerHTML = ultima_modificacao;
+        
+        </script>
+      
+      </section>
+        
+        <img id="botao_dark" onclick="dark_mode()" src="/images/moon.png" height="25px" width="25px" alt="Botão para alternar entre os modo claro e escuro">
 
       <nav id ="navegacao">
         
@@ -42,24 +60,6 @@
         <a>I PROEJA</a>
 
       </nav>
-      
-      <section id ="última_atualização">
-        
-        <p style ="display: inline">Última Modificação em: </p>
-        
-        <p id ="last_mod" style ="display: inline"></p>
-        
-        <script>
-          
-          let ultima_modificacao = document.lastModified;
-          
-          document.getElementById("last_mod").innerHTML = ultima_modificacao;
-        
-        </script>
-        
-      </section>
-      
-      <button id="botao_dark" type ="button" onclick="dark_mode()"><img alt="Botão para alternar entre modo claro e escuro" src="images/moon.png" height="25vw" width="25vw"></button>
 			
 		</header>
 	
