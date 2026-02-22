@@ -4,13 +4,13 @@ html {
 }
 
 body {
-    
+
   background-color: white;
   
   color: #32373f;
   
   font-family: 'Avenir Next', 'Avenir', 'Arial', sans-serif;
-  
+
   transition: background-color 1s;
 }
 
@@ -21,23 +21,14 @@ body {
   color: white;
 }
 
-header{
+header, main{
   
-  width: 1000px;
+  max-width: 1000px;
     
   margin: auto;
 }
 
-#última_atualização{
-  
-  display: inline;
-}
-
 #botao_dark{
-
-  background-color: #E8E8E8;
-  
-  border-radius: 30px;
       
   cursor: pointer;
   
@@ -45,27 +36,32 @@ header{
   
   float: right;
   
-  left: .5em;
-
+  padding-top: 10px;
+  
+  margin-right: 15px;
 }
 
 #navegar_esquerda{
-  
-  padding-top: 35px;
-    
-  border-right: #E8E8E8 solid 2px;
+
+  background-color: #1e1f22;
   
   height: 100%;
   
   left: 0;
-      
-  width: 200px;
+    
+  overflow-x: hidden;
   
-  overflow: auto;
+  padding-top: 100px;
   
   position: fixed;
-      
+  
   top: 0;
+  
+  text-decoration: none;
+  
+  transition: 1s ease-in-out;
+  
+  width: 0;
   
   z-index: 1;
 }
@@ -81,6 +77,8 @@ header{
   text-align: center;
   
   text-decoration: none;
+    
+  color: white;
 }
 
 #navegar_esquerda a:hover{
@@ -94,60 +92,19 @@ header{
   transition: 0.5s;
 }
 
-#navegar_direita{
-  
-  padding-top: 35px;
-    
-  border-left: #E8E8E8 solid 2px;
-  
-  height: 100%;
-  
-  right: 0;
-      
-  width: 200px;
-  
-  overflow: auto;
-  
-  position: fixed;
-      
-  top: 0;
-  
-  z-index: 1;
-}
 
-#navegar_direita a{
-    
-  display: block;
-  
-  font-weight: bold;
-      
-  padding: 1vw;
-      
-  text-align: center;
-  
-  text-decoration: none;
-}
+#botao_abrir{
 
-#navegar_direita a:hover{
-    
-  background-color: #E8E8E8;
-  
-  color: #0d1117;
-  
   cursor: pointer;
   
-  transition: 0.5s;
-}
-#navegar_esquerda a:active{
-
-    
-}
-
-main {
-        
-  max-width: 1000px;
+  font-size: 25px;
   
-  margin: auto;
+  padding-bottom: 10px;
+}
+
+#botao_fechar{
+  
+  font-size: 30px;
 }
 
 #code_block {
@@ -167,14 +124,9 @@ h2::after,h3::after,h4::after,h5::after,h6::after{
   content: ":";
 }
 
-h2,h3,h4,h5,h6{
-    
-  text-align: left;
-}
-
 p{
     
-  line-height: 1.5;
+  line-height: 1.5em;
   
   text-align: justify;
 }

@@ -6,7 +6,7 @@
 		
       <meta charset ="utf-8">
 
-      <meta name ="author" content="Marvin Silc">
+      <meta name ="author" content ="Marvin Silc">
 
       <meta name ="viewport" content ="width=device-width, initial-scale=1"/>
 
@@ -16,19 +16,23 @@
 
       <link rel ="stylesheet" type ="text/css" href ="index.css">
 
-      <link href="./Prism.css" rel="stylesheet"/>
+      <link href ="./Prism.css" rel ="stylesheet"/>
 
-      <script src="./Prism.js"></script>
+      <script src ="./Prism.js"></script>
 
-      <script src="./index.js"></script>
+      <script src ="./index.js"></script>
 
       <title>Página Inicial</title>
 		
 		</head>
 
-	<body data-prismjs-copy-timeout="1500">
+	<body data-prismjs-copy-timeout ="1500">
 
 		<header>
+
+      <span id ="botao_abrir" onclick="abrir_menu_lateral()">&#9776;</span>
+      
+      <img id ="botao_dark" onclick ="dark_mode()" src ="/images/day_night.png" height ="25px" width ="25px" alt ="Botão para alternar entre os modo claro e escuro">
       
       <section id ="última_atualização">
       
@@ -45,42 +49,32 @@
         </script>
       
       </section>
-        
-        <img id ="botao_dark" onclick ="dark_mode()" src ="/images/day_night.png" height ="25px" width ="25px" alt ="Botão para alternar entre os modo claro e escuro">
 			
 		</header>
+      
+      <nav id ="navegar_esquerda">
+        
+        <a href ="https://google.com" target ="_blank">3º INF-A</a>
+        
+        <a href ="">3º INF-B</a>
+        
+        <a href ="">3º INF-C</a>
+        
+        <a href ="">2º INF-A</a>
+        
+        <a href ="">1º INF-A</a>
+        
+        <a href ="">1º INF-B</a>
+        
+        <a href ="">IV PROSUB</a>
+        
+        <a href ="">I PROEJA</a>
+        
+        <a id ="botao_fechar" onclick ="fechar_menu_lateral()">&times;</a>
+  
+      </nav>
 	
 		<main>
-      
-      <section>
-        
-        <nav id ="navegar_esquerda">
-          
-          <a>3º INF-A</a>
-          <a>3º INF-B</a>
-          <a>3º INF-C</a>
-          <a>2º INF-A</a>
-          <a>1º INF-A</a>
-          <a>1º INF-B</a>
-          <a>IV PROSUB</a>
-          <a>I PROEJA</a>
-    
-        </nav>
-        
-        <nav id ="navegar_direita">
-          
-          <a>3º INF-A</a>
-          <a>3º INF-B</a>
-          <a>3º INF-C</a>
-          <a>2º INF-A</a>
-          <a>1º INF-A</a>
-          <a>1º INF-B</a>
-          <a>IV PROSUB</a>
-          <a>I PROEJA</a>
-    
-        </nav>
-      
-      </section>
       
       <h1>HTML & CSS: básico do básico com h1, h2, h3 e p</h1>
       
