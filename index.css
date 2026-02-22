@@ -37,7 +37,13 @@ header, main{
 
 #botao_fechar_menu{
   
-  font-size: 30px;
+  font-size: 40px;
+  
+  position: absolute;
+  
+  right: 20px;
+  
+  top: 0;
 }
 
 #botao_dark{
@@ -84,20 +90,18 @@ header, main{
   
   font-weight: bold;
       
-  padding: 1vw;
+  padding: 2vw;
       
   text-align: center;
   
   text-decoration: none;
     
-  color: white;
+  color: #7f8181;
 }
 
 #navegar_esquerda a:hover{
-    
-  background-color: #E8E8E8;
   
-  color: #0d1117;
+  color: white;
   
   cursor: pointer;
   
@@ -147,3 +151,23 @@ codigo{
   padding-top: 2px;
   padding-bottom: 2px;*/
 }
+
+@media screen and (max-width: 500px){
+
+#navegar_esquerda a{
+      
+  padding: 5vw;
+  
+}
+
+#navegar_esquerda a:hover{
+  
+  color: white;
+}
+
+#botao_fechar_menu{
+  
+  font-size: 50px;
+}
+  
+} 
