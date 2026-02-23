@@ -21,7 +21,7 @@ body {
   color: white;
 }
 
-header, main, footer {
+header, main, footer{
   
   max-width: 1000px;
     
@@ -33,12 +33,12 @@ header, main, footer {
   cursor: pointer;
   
   font-size: 30px;
+  
+  margin-left: 15px;
 }
 
 #botao_fechar_menu{
-  
-  font-size: 40px;
-  
+
   position: absolute;
   
   right: 20px;
@@ -85,6 +85,8 @@ header, main, footer {
 #navegar_esquerda a{
     
   display: block;
+  
+  font-size: 2em;
   
   font-weight: bold;
       
@@ -141,18 +143,4 @@ codigo{
   padding-right: 5px;
   padding-top: 2px;
   padding-bottom: 2px;*/
-}
-
-@media screen and (max-width: 428px){
-
-  #navegar_esquerda a{
-    
-    padding-top: 50px;
-  }
-
-  #botao_fechar_menu{
-    
-    font-size: 40px;
-  }
-  
 }
