@@ -144,3 +144,31 @@ codigo{
   padding-top: 2px;
   padding-bottom: 2px;*/
 }
+
+@media screen and (max-width: 428px){
+
+  #navegar_esquerda a{
+
+    padding-top: 45px;
+  }
+
+  #botao_fechar_menu{
+
+    font-size: 35px;
+  }
+
+}
+
+@media screen and (max-width: 800px){
+
+  #navegar_esquerda a{
+
+    padding-top: 55px;
+  }
+
+  #botao_fechar_menu{
+
+    font-size: 40px;
+  }
+
+}
