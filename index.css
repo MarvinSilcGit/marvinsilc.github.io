@@ -21,7 +21,7 @@ body {
   color: white;
 }
 
-header, main{
+header, main, footer {
   
   max-width: 1000px;
     
@@ -69,13 +69,11 @@ header, main{
     
   overflow-x: hidden;
   
-  padding-top: 100px;
+  padding-top: 80px;
   
   position: fixed;
   
   top: 0;
-  
-  text-decoration: none;
   
   transition: 1s ease-in-out;
   
@@ -90,7 +88,7 @@ header, main{
   
   font-weight: bold;
       
-  padding: 2vw;
+  padding: 1.5vw;
       
   text-align: center;
   
@@ -114,15 +112,8 @@ header, main{
 }
 
 h1{
-    
-  font-weight: 600;
   
   text-align: center;
-}
-
-h2::after,h3::after,h4::after,h5::after,h6::after{
-    
-  content: ":";
 }
 
 p{
@@ -152,22 +143,16 @@ codigo{
   padding-bottom: 2px;*/
 }
 
-@media screen and (max-width: 500px){
+@media screen and (max-width: 428px){
 
-#navegar_esquerda a{
-      
-  padding: 5vw;
+  #navegar_esquerda a{
+    
+    padding-top: 50px;
+  }
+
+  #botao_fechar_menu{
+    
+    font-size: 40px;
+  }
   
 }
-
-#navegar_esquerda a:hover{
-  
-  color: white;
-}
-
-#botao_fechar_menu{
-  
-  font-size: 50px;
-}
-  
-} 

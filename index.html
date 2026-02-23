@@ -33,22 +33,6 @@
       <span id ="botao_abrir_menu" onclick="abrir_menu_lateral()">&#9776;</span>
       
       <img id ="botao_dark" onclick ="dark_mode()" src ="./images/day_night.png" height ="30px" width ="30px" alt ="Botão para alternar entre os modo claro e escuro">
-
-      <section id ="última_atualização">
-      
-        <p style ="display: inline">Última Modificação em: </p>
-        
-        <p id ="last_mod" style ="display: inline"></p>
-        
-        <script>
-          
-          let ultima_modificacao = document.lastModified;
-          
-          document.getElementById("last_mod").innerHTML = ultima_modificacao;
-        
-        </script>
-      
-      </section>
 			
 		</header>
       
@@ -155,6 +139,22 @@
       <p>O elemento <codigo>mark</codigo></p>
 
 		</main>
+  
+    <footer  id ="última_atualização">
+      
+      <p style ="display: inline">Última Modificação em: </p>
+
+      <p id ="last_mod" style ="display: inline"></p>
+
+      <script>
+
+        let ultima_modificacao = document.lastModified;
+
+        document.getElementById("last_mod").innerHTML = ultima_modificacao;
+
+      </script>
+
+    </footer>
 	
 	</body>
 
