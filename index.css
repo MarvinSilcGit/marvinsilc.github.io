@@ -28,6 +28,11 @@ header, main, footer{
   margin: auto;
 }
 
+footer{
+  
+  padding-top: 4vw;
+}
+
 #botao_abrir_menu{
 
   cursor: pointer;
@@ -123,6 +128,8 @@ p{
   line-height: 1.5em;
   
   text-align: justify;
+  
+  text-indent: 2vw;
 }
 
 codigo{
@@ -156,6 +163,11 @@ codigo{
 
     font-size: 35px;
   }
+  
+  main, footer{
+    
+    max-width: 90%;
+  }
 
 }
 
@@ -170,5 +182,27 @@ codigo{
 
     font-size: 40px;
   }
+  
+    main, footer{
+    
+    max-width: 90%;
+  }
 
+}
+
+a:link{
+
+  text-decoration: none;
+}
+
+a, img{
+  
+  max-width: 100%;
+}
+
+blockquote{
+  
+  font-style: italic;
+  
+  text-align: justify;
 }
