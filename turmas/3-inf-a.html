@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+
+	<html lang ="pt-br">
+
+		<head>
+
+      <meta charset ="utf-8">
+
+      <meta name ="author" content ="Marvin Silc">
+
+      <meta name ="viewport" content ="width=device-width, initial-scale=1"/>
+
+      <meta name ="keywords" content ="Robótica, Ficção Científica, História">
+
+      <link rel ="shortcut icon" type ="image/x-icon" href ="/images/favicon.ico">
+
+      <link rel ="stylesheet" type ="text/css" href ="/index.css">
+
+      <link href ="/Prism.css" rel ="stylesheet"/>
+
+      <script src ="/Prism.js"></script>
+
+      <script src ="/index.js"></script>
+
+      <title>Página Inicial</title>
+
+		</head>
+
+	<body data-prismjs-copy-timeout ="1500">
+
+		<header>
+
+      <span id ="botao_abrir_menu" onclick ="abrir_menu_lateral()">&#9776;</span>
+
+      <img id ="botao_dark" onclick ="dark_mode()" src ="/images/day_night.png" height ="30px" width ="30px" alt ="Botão para alternar entre os modo claro e escuro">
+
+		</header>
+
+      <nav id ="navegar_esquerda">
+
+        <a id ="botao_fechar_menu" onclick ="fechar_menu_lateral()">&times;</a>
+
+        <a href ="/index.html">Página Principal</a>
+
+        <a href ="/turmas/3-inf-b.html">3º INF-B</a>
+
+        <a href ="">3º INF-C</a>
+
+        <a href ="">2º INF-A</a>
+
+        <a href ="">1º INF-A</a>
+
+        <a href ="">1º INF-B</a>
+
+        <a href ="">IV PROSUB</a>
+
+        <a href ="">I PROEJA</a>
+
+      </nav>
+
+		<main>
+
+      <h1>Criando as primeiras páginas web</h1>
+
+      <a href ="https://vscode.dev/" target ="_blank">Clique aqui para acessar o VS Code</a>
+
+      <h2>Alterando o idioma do programa e Acessando a conta do Github</h2>
+
+      <video width="960" height="540" controls>
+
+        <source src="/videos/idioma.mp4" type="video/mp4">
+
+        Seu navegador não suporta o vídeo :(
+
+      </video>
+
+      <br>
+
+      <h2>Arquivos básicos de toda página web</h2>
+
+      <video width="960" height="540" controls>
+
+        <source src="/videos/arquivos.mp4" type="video/mp4">
+
+        Seu navegador não suporta o vídeo :(
+
+      </video>
+
+      <br>
+
+      <h2>Copie o código abaixo dentro do arquivo <codigo>index.html</codigo></h2>
+
+      <pre id ="code_block" class ="line-numbers" data-line ="">
+
+        <code id ="teste" class ="language-html" data-prismjs-copy ="Copiar Código">
+
+&lt;!DOCTYPE html&gt;
+
+&lt;html lang =&quot;pt-br&quot;&gt;
+
+    &lt;head&gt;
+
+        &lt;meta charset =&quot;utf-8&quot;&gt;
+
+        &lt;meta name =&quot;author&quot; content=&quot;Seu nome aqui&quot;&gt;
+
+        &lt;meta name =&quot;viewport&quot; content =&quot;width=device-width,initial-scale=1&quot;/&gt;
+
+        &lt;link rel =&quot;shortcut icon&quot; type =&quot;image/x-icon&quot; href =&quot;./images/favicon.ico&quot;&gt;
+
+        &lt;link rel =&quot;stylesheet&quot; type =&quot;text/css&quot; href =&quot;./index.css&quot;&gt;
+
+        &lt;script src=&quot;./index.js&quot;&gt;&lt;/script&gt;
+
+        &lt;title&gt;Coloque aqui um t&iacute;tulo para sua p&aacute;gina&lt;/title&gt;
+
+    &lt;/head&gt;
+
+    &lt;body&gt;
+
+
+    &lt;/body&gt;
+
+&lt;/html&gt;
+
+        </code>
+
+      </pre>
+
+      <br>
+
+      <h3>Não esqueça de colocar seu nome na linha 9 e alterar o título da página na linha 19</h3>
+
+      <br>
+
+      <h2>Adicione a seguinte porção de código as linhas 23 e 26</h2>
+
+      <img src ="/images/html.png" width="960" height="540" alt ="Imagem de um código HTML" title ="Código HTML"/>
+
+      <h2>Adicione a seguinte código no arquivo <codigo>index.css</codigo></h2>
+
+      <img src ="/images/css.png" alt ="Imagem de um código CSS" title ="Código CSS"/>
+
+      <h2>Adicione a seguinte código no arquivo <codigo>index.js</codigo></h2>
+
+      <img src ="/images/js.png" alt ="Imagem de um código JavaScript" title ="Código JavaScript"/>
+
+      <br>
+
+      <h2>Ao terminar, salve o seu progresso</h2>
+
+      <video width="960" height="540" controls>
+
+        <source src="/videos/commit.mp4" type="video/mp4">
+
+        Seu navegador não suporta o vídeo :(
+
+      </video>
+
+		</main>
+
+    <footer id ="última_atualização">
+
+      <p style ="display: inline">Última Modificação em: </p>
+
+      <p id ="last_mod" style ="display: inline"></p>
+
+      <script>
+
+        let ultima_modificacao = document.lastModified;
+
+        document.getElementById("last_mod").innerHTML = ultima_modificacao;
+
+      </script>
+
+    </footer>
+
+	</body>
+
+</html>
