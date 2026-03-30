@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+
+	<html lang ="pt-br">
+
+		<head>
+
+      <meta charset ="utf-8">
+
+      <meta name ="author" content ="Marvin Silc">
+
+      <meta name ="viewport" content ="width=device-width, initial-scale=1"/>
+
+      <meta name ="keywords" content ="Robótica, Ficção Científica, História">
+
+      <link rel ="shortcut icon" type ="image/x-icon" href ="/images/favicon.ico">
+
+      <link rel ="stylesheet" type ="text/css" href ="/index.css">
+
+      <link href ="/Prism.css" rel ="stylesheet"/>
+
+      <script src ="/Prism.js"></script>
+
+      <script src ="/index.js"></script>
+
+      <title>Página Inicial</title>
+
+		</head>
+
+	<body data-prismjs-copy-timeout ="1500">
+
+		<header>
+
+      <span id ="botao_abrir_menu" onclick ="abrir_menu_lateral()">&#9776;</span>
+
+      <img id ="botao_dark" onclick ="dark_mode()" src ="/images/day_night.png" height ="30px" width ="30px" alt ="Botão para alternar entre os modo claro e escuro">
+
+		</header>
+
+      <nav id ="navegar_esquerda">
+
+        <a id ="botao_fechar_menu" onclick ="fechar_menu_lateral()">&times;</a>
+
+        <a href ="/index.html">Página Principal</a>
+
+        <a href ="/turmas/3-inf-a.html">3º INF-A</a>
+
+        <a href ="/turmas/3-inf-b.html">3º INF-B</a>
+
+        <a href ="">2º INF-A</a>
+
+        <a href ="">1º INF-A</a>
+
+        <a href ="">1º INF-B</a>
+
+        <a href ="">IV PROSUB</a>
+
+        <a href ="">I PROEJA</a>
+
+      </nav>
+
+		<main>
+
+      <h1>Criando as primeiras páginas web</h1>
+
+      <a href ="https://vscode.dev/" target ="_blank">Clique aqui para acessar o VS Code</a>
+
+      <h2>Copiar o código abaixo no arquivo <codigo>index.html</codigo></h2>
+
+      <pre id ="code_block" class ="line-numbers" data-line ="">
+
+        <code id ="teste" class ="language-html" data-prismjs-copy ="Copiar Código">
+
+&lt;!DOCTYPE html&gt;
+
+&lt;html lang =&quot;pt-br&quot;&gt;
+
+    &lt;head&gt;
+
+        &lt;meta charset =&quot;utf-8&quot;&gt;
+
+        &lt;meta name =&quot;author&quot; content=&quot;Seu nome aqui&quot;&gt;
+
+        &lt;meta name =&quot;viewport&quot; content =&quot;width=device-width,initial-scale=1&quot;/&gt;
+
+        &lt;link rel =&quot;shortcut icon&quot; type =&quot;image/x-icon&quot; href =&quot;./images/favicon.ico&quot;&gt;
+
+        &lt;link rel =&quot;stylesheet&quot; type =&quot;text/css&quot; href =&quot;./index.css&quot;&gt;
+
+        &lt;script src=&quot;./index.js&quot;&gt;&lt;/script&gt;
+
+        &lt;title&gt;Coloque aqui um t&iacute;tulo para sua p&aacute;gina&lt;/title&gt;
+
+    &lt;/head&gt;
+
+    &lt;body&gt;
+          &lt;h1 id =&quot;h1&quot; onclick =&quot;mudar_conteudo_elemento()&quot;&gt; Resenha crítica do Livro: Chapeuzinho Nem T&atilde;o Vermelho&lt;/h1&gt;
+
+          &lt;h2&gt;Cap&iacute;tulo 1: Seu Nascimento&lt;/h2&gt;
+
+            &lt;h3&gt;Seus pais&lt;/h3&gt;
+
+                &lt;p&gt;Os pais da Chapeuzilnho vermelho nasceram...&lt;/p&gt;
+
+          &lt;h2&gt;Cap&iacute;tulo 2: Sua vovozinha&lt;/h2&gt;
+
+            &lt;h3&gt;De onde ela veio?&lt;/h3&gt;
+
+                &lt;p&gt;Natural dos Alpes Su&iacute;&ccedil;os, sua vovozinha era..&lt;/p&gt;
+
+          &lt;h2&gt;Cap&iacute;tulo 3: O Lobo-mau&lt;/h2&gt;
+
+            &lt;h3&gt;O maior vil&atilde;o da Hist&oacute;ria&lt;/h3&gt;
+
+                &lt;p&gt;Esse Lobo-mau era t&atilde;o mal&eacute;volo que certa feita...&lt;/p&gt;
+
+    &lt;/body&gt;
+
+&lt;/html&gt;
+
+        </code>
+
+      </pre>
+
+      <br>
+
+      <h2>Copiar o código abaixo no arquivo <codigo>index.css</codigo></h2>
+
+      <pre id ="code_block" class ="line-numbers" data-line ="">
+
+        <code id ="teste" class ="language-css" data-prismjs-copy ="Copiar Código">
+
+          h1{
+
+          color: blue;
+
+          background-color: yellow;
+          }
+
+          h2{
+          color: red;
+
+          background-color: gray;
+
+          }
+
+          h3{
+
+          color: yellow;
+
+          background-color: brown;
+
+          }
+
+          p{
+
+            color: gray;
+
+            background-color: magenta;
+          }
+
+        </code>
+
+      </pre>
+
+      <br>
+
+      <h2>Copiar o código abaixo no arquivo <codigo>index.js</codigo></h2>
+
+      <pre id ="code_block" class ="line-numbers" data-line ="">
+
+        <code id ="teste" class ="language-js" data-prismjs-copy ="Copiar Código">
+
+          function mudar_conteudo_element(){
+
+            document.getElementById("h1").innerHTML = "Hello Javascript!";
+
+          }
+
+        </code>
+
+      </pre>
+
+		</main>
+
+    <footer id ="última_atualização">
+
+      <p style ="display: inline">Última Modificação em: </p>
+
+      <p id ="last_mod" style ="display: inline"></p>
+
+      <script>
+
+        let ultima_modificacao = document.lastModified;
+
+        document.getElementById("last_mod").innerHTML = ultima_modificacao;
+
+      </script>
+
+    </footer>
+
+	</body>
+
+</html>
