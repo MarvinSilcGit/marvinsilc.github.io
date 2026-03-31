@@ -1,0 +1,192 @@
+<h1>Código para iluminar um led com o Arduino</h1>
+
+      <br>
+
+      <a href ="https://wokwi.com/" target ="_blank">Clique aqui para acessar o Wokwi</a>
+
+      <h2>Configuração básica do wokwi</h2>
+
+      <video width="960" height="540" controls>
+
+        <source src="/videos/iniciando-wokwi.mp4" type="video/mp4">
+
+        Seu navegador não suporta o vídeo :(
+
+      </video>
+
+      <br>
+
+      <h2>Digite o código abaixo no wokwi</h2>
+
+      <pre id ="code_block" class ="line-numbers" data-line ="">
+
+        <code id ="teste" class ="language-c" data-prismjs-copy ="Copiar Código">
+int led = 9;         // O Pino ao qual o LED está conectado
+int brilho = 0;      // O nível de brilho do LED. 0 é o mínimo e 255 é o máximo
+int quantidade_mudanca = 5;  // Quanto níveis o LED vai diminuindo ou aumentando
+
+// O bloco SETUP onde o código executa
+void setup() {
+
+  // Use pinMode para que o led esteja no modo OUTPUT/Saída
+  pinMode(led, OUTPUT);
+}
+
+// O bloco LOOP que faz o código se repetir infinitamente
+void loop() {
+
+  // Define o nível de brilho do LED
+  analogWrite(led, brilho);
+
+  // Muda o brilho para a próxima que LOOP se repetir. Nesse caso, irá aumentar
+  brilho = brilho + quantidade_mudanca;
+
+  // Altera a direção do efeito quando o brilho é maior que 255 ou menor que 0;
+  if (brilho <= 0 || brilho >= 255) {
+    quantidade_mudanca = - quantidade_mudanca;
+  }
+
+  // Atraso/delay o efeito cada mudança em uma quantidade de milisegundos
+
+  // 1000 equivale a 1 segundo e 500 equivale a 0,5 segundo
+
+  delay(30);
+}
+
+        </code>
+
+      </pre>
+
+      <br>
+
+      <h2>Conectando os componentes: LED e Arduino</h2>
+
+      <video width="960" height="540" controls>
+
+        <source src="/videos/arduino-led.mp4" type="video/mp4">
+
+        Seu navegador não suporta o vídeo :(
+
+      </video>
+
+      <br>
+
+      <h2>Salvando o projeto</h2>
+
+      <video width="960" height="540" controls>
+
+        <source src="/videos/arduino-led1.mp4" type="video/mp4">
+
+        Seu navegador não suporta o vídeo :(
+
+      </video>
+
+      <h3>Avaliando foco</h3>
+
+      <ol>
+        <li>Mude o LED da posição 9 para 10, tanto no código quanto no simulador. Mantenha o GND inalterado.</li>
+
+        <li>Aumente a quantidade de mudança da luminosidade do LED para 15.</li>
+
+        <li>Altere o atraso de mudança da luminosidade para 60.</li>
+
+        <li>Depois que terminar as três de cima, vá até a mesa para testar seu conhecimento.</li>
+
+      </ol>
+
+<h1>Criando as primeiras páginas web</h1>
+
+      <a href ="https://vscode.dev/" target ="_blank">Clique aqui para acessar o VS Code</a>
+
+      <h2>Alterando o idioma do programa e Acessando a conta do Github</h2>
+
+      <video width="960" height="540" controls>
+
+        <source src="/videos/idioma.mp4" type="video/mp4">
+
+        Seu navegador não suporta o vídeo :(
+
+      </video>
+
+      <br>
+
+      <h2>Arquivos básicos de toda página web</h2>
+
+      <video width="960" height="540" controls>
+
+        <source src="/videos/arquivos.mp4" type="video/mp4">
+
+        Seu navegador não suporta o vídeo :(
+
+      </video>
+
+      <br>
+
+      <h2>Copie o código abaixo dentro do arquivo <codigo>index.html</codigo></h2>
+
+      <pre id ="code_block" class ="line-numbers" data-line ="">
+
+        <code id ="teste" class ="language-html" data-prismjs-copy ="Copiar Código">
+
+&lt;!DOCTYPE html&gt;
+
+&lt;html lang =&quot;pt-br&quot;&gt;
+
+    &lt;head&gt;
+
+        &lt;meta charset =&quot;utf-8&quot;&gt;
+
+        &lt;meta name =&quot;author&quot; content=&quot;Seu nome aqui&quot;&gt;
+
+        &lt;meta name =&quot;viewport&quot; content =&quot;width=device-width,initial-scale=1&quot;/&gt;
+
+        &lt;link rel =&quot;shortcut icon&quot; type =&quot;image/x-icon&quot; href =&quot;./images/favicon.ico&quot;&gt;
+
+        &lt;link rel =&quot;stylesheet&quot; type =&quot;text/css&quot; href =&quot;./index.css&quot;&gt;
+
+        &lt;script src=&quot;./index.js&quot;&gt;&lt;/script&gt;
+
+        &lt;title&gt;Coloque aqui um t&iacute;tulo para sua p&aacute;gina&lt;/title&gt;
+
+    &lt;/head&gt;
+
+    &lt;body&gt;
+
+
+    &lt;/body&gt;
+
+&lt;/html&gt;
+
+        </code>
+
+      </pre>
+
+      <br>
+
+      <h3>Não esqueça de colocar seu nome na linha 9 e alterar o título da página na linha 19</h3>
+
+      <br>
+
+      <h2>Adicione a seguinte porção de código as linhas 23 e 26</h2>
+
+      <img src ="/images/html.png" width="960" height="540" alt ="Imagem de um código HTML" title ="Código HTML"/>
+
+      <h2>Adicione a seguinte código no arquivo <codigo>index.css</codigo></h2>
+
+      <img src ="/images/css.png" alt ="Imagem de um código CSS" title ="Código CSS"/>
+
+      <h2>Adicione a seguinte código no arquivo <codigo>index.js</codigo></h2>
+
+      <img src ="/images/js.png" alt ="Imagem de um código JavaScript" title ="Código JavaScript"/>
+
+      <br>
+
+      <h2>Ao terminar, salve o seu progresso</h2>
+
+      <video width="960" height="540" controls>
+
+        <source src="/videos/commit.mp4" type="video/mp4">
+
+        Seu navegador não suporta o vídeo :(
+
+      </video>
