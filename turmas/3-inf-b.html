@@ -59,84 +59,69 @@
       </nav>
 
 		<main>
-      
-      <h1>Avaliação arduino. Valor 2,0</h1>
-      
+
+      <h1>Utilizando a protoboard</h1>
+
       <a href ="https://wokwi.com/" target ="_blank">Clique aqui para acessar o Wokwi</a>
 
-      <h2>Configuração básica do wokwi</h2>
-
+      <p>A função da protoboard é extender as conexões de uma placa Arduino</p>
+      
+      <h2>Adicione a protoboard ao projeto existente</h2>
+      
       <video width="960" height="540" controls>
 
-        <source src="/videos/prova1-robotica.mp4" type="video/mp4">
+        <source src="/videos/protoboard.mp4" type="video/mp4">
 
         Seu navegador não suporta o vídeo :(
 
       </video>
-
-      <br>
-
-      <h2>Digite o código abaixo no wokwi</h2>
       
-<pre id ="code_block" class ="line-numbers" data-line ="">
+      <br>
+      
+      <h2>Conectando os componentes a protoboard</h2>
+      
+      <video width="960" height="540" controls>
 
-        <code id ="teste" class ="language-c" data-prismjs-copy ="Copiar Código">
-int led = 10;         // O Pino ao qual o LED está conectado
-int brilho = 0;      // O nível de brilho do LED. 0 é o mínimo e 255 é o máximo
+        <source src="/videos/conectando-protoboard.mp4" type="video/mp4">
 
-// O bloco SETUP onde o código executa
-void setup() {
-  
-  // Use pinMode para que o led esteja no modo OUTPUT/Saída
-  pinMode(led, OUTPUT);
-}
+        Seu navegador não suporta o vídeo :(
 
-// O bloco LOOP que faz o código se repetir infinitamente
-void loop() {
-  // identifica a entrada o pino analógico sendo 0:
-  int valor_sensor = analogRead(A0);
+      </video>
+      
+      <br>
+      
+      Na terceira linha adcione o código abaixo:
 
-  // Converte a leitura analógica (que vai de 0 - 1023) para um voltagem entre (0v - 5V):
-  float voltagem = valor_sensor * (5.0 / 1023.0);
-  //exibe o valor que está sendo lido
+#define buzzer 8
 
-  // Define o nível de brilho do LED
-  analogWrite(led, brilho);
+Na linha 6 adicione o seguinte código:
 
-  if (voltagem == 0){
+pinMode(buzzer, OUTPUT);
 
-    brilho = 0;
-    
-  }else if (voltagem > 0 && voltagem <= 1){
-          
-    brilho = 15;
-          
-  }else if (voltagem > 1 && voltagem <= 2){
+Clique com o lado esquerdo do mouse após o símbolo de ponto e vírgula da linha 25. Pressione a tecla Enter para adicionar uma nova linha abaixo. Nessa linha adicione o código abaixo:
 
-    brilho = 100;
+tone(buzzer, 0, 2000);
 
-  }else if (voltagem > 2 && voltagem <= 3){
 
-    brilho = 150;
-          
-  }else if (voltagem > 3){
+Clique com o lado esquerdo do mouse após o símbolo de ponto e vírgula da linha 30. Pressione a tecla Enter para adicionar uma nova linha abaixo. Nessa linha adicione o código abaixo:
 
-    brilho = 250;
+tone(buzzer, 1000, 2000);
 
-  }
 
-  Serial.println(voltagem);
-  
-  // Atraso/delay o efeito cada mudança em uma quantidade de milisegundos
-  // 1000 equivale a 1 segundo e 500 equivale a 0,5 segundo
-  delay(100);
-}
+Clique com o lado esquerdo do mouse após o símbolo de ponto e vírgula da linha 35. Pressione a tecla Enter para adicionar uma nova linha abaixo. Nessa linha adicione o código abaixo:
 
-        </code>
+tone(buzzer, 2000, 2000);
 
-      </pre>
 
-      <h3>Após terminar, clique no botão save no canto superior esquerdo e salve como Acendendo LED com botão giratório</h3>
+Clique com o lado esquerdo do mouse após o símbolo de ponto e vírgula da linha 40. Pressione a tecla Enter para adicionar uma nova linha abaixo. Nessa linha adicione o código abaixo:
+
+tone(buzzer, 3000, 2000);
+
+
+Clique com o lado esquerdo do mouse após o símbolo de ponto e vírgula da linha 45. Pressione a tecla Enter para adicionar uma nova linha abaixo. Nessa linha adicione o código abaixo:
+
+tone(buzzer, 4000, 2000);
+
       
 		</main>
 
