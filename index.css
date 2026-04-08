@@ -209,6 +209,6 @@ blockquote{
 
 video{
 
-  width: 100%;
+  width: inherit;
   height: 562px;
 }
