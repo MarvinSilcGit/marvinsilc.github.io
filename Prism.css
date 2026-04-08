@@ -157,7 +157,7 @@ pre[data-line] {
     
 	right: 0;
     
-	padding: inherit 0;
+	padding: inherit;
     
 	margin-top: 1em; /* Same as .prism’s padding-top */
 
@@ -307,7 +307,7 @@ div.code-toolbar > .toolbar {
 	
     z-index: 10;
 	
-    top: 0em;
+    top: 0;
 	
     right: 2em;
 	
