@@ -113,7 +113,7 @@ footer{
   transition: 0.5s;
 }
 
-#code_block {
+pre{
 
   box-shadow: 0 1px 5px 1px darkred;
 }
