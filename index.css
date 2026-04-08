@@ -206,3 +206,9 @@ blockquote{
   
   text-align: justify;
 }
+
+video{
+
+  width: 100%;
+  height: 562px;
+}
