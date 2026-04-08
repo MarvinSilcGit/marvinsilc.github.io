@@ -94,7 +94,7 @@
 
       <ul>
         
-        <li>Na terceira linha adcione o código abaixo:</li>
+        <li>Na terceira linha adicione o código abaixo:</li>
   
           <pre id ="code_block" class ="line-numbers" data-line ="">
   
@@ -170,11 +170,11 @@
 
       </pre>
         
-        <br>
-        
-        <li>Clique com o lado esquerdo do mouse após o símbolo de ponto e vírgula da linha 45. Pressione a tecla <codigo>Enter</codigo> para adicionar uma nova linha abaixo. Nessa linha adicione o código abaixo:</li>
-        
-        <pre id ="code_block" class ="line-numbers" data-line ="">
+      <br>
+
+      <li>Clique com o lado esquerdo do mouse após o símbolo de ponto e vírgula da linha 45. Pressione a tecla <codigo>Enter</codigo> para adicionar uma nova linha abaixo. Nessa linha adicione o código abaixo:</li>
+
+      <pre id ="code_block" class ="line-numbers" data-line ="">
 
         <code id ="teste" class ="language-Arduino"  data-prismjs-copy ="Copiar Código">
         tone(buzzer, 4000, 2000);
@@ -198,89 +198,6 @@
       </video>
 
       <h2>5. Após isso, execute o programa para verificar se não possui erros. Por fim, venha para a mesa testar na prática.</h2>
-
-
-        </code>
-
-      </pre>
-
-      <h1>Avaliação arduino. Valor 2,0</h1>
-
-      <a href ="https://wokwi.com/" target ="_blank">Clique aqui para acessar o Wokwi</a>
-
-      <h2>Configuração básica do wokwi</h2>
-
-      <video width="960" height="540" controls>
-
-        <source src="/videos/prova1-robotica.mp4" type="video/mp4">
-
-        Seu navegador não suporta o vídeo :(
-
-      </video>
-
-      <br>
-
-      <h2>Digite o código abaixo no wokwi</h2>
-
-<pre id ="code_block" class ="line-numbers" data-line ="">
-
-        <code id ="teste" class ="language-c" data-prismjs-copy ="Copiar Código">
-int led = 10;         // O Pino ao qual o LED está conectado
-int brilho = 0;      // O nível de brilho do LED. 0 é o mínimo e 255 é o máximo
-
-// O bloco SETUP onde o código executa
-void setup() {
-
-  // Use pinMode para que o led esteja no modo OUTPUT/Saída
-  pinMode(led, OUTPUT);
-}
-
-// O bloco LOOP que faz o código se repetir infinitamente
-void loop() {
-  // identifica a entrada o pino analógico sendo 0:
-  int valor_sensor = analogRead(A0);
-
-  // Converte a leitura analógica (que vai de 0 - 1023) para um voltagem entre (0v - 5V):
-  float voltagem = valor_sensor * (5.0 / 1023.0);
-  //exibe o valor que está sendo lido
-
-  // Define o nível de brilho do LED
-  analogWrite(led, brilho);
-
-  if (voltagem == 0){
-
-    brilho = 0;
-
-  }else if (voltagem > 0 && voltagem <= 1){
-
-    brilho = 15;
-
-  }else if (voltagem > 1 && voltagem <= 2){
-
-    brilho = 100;
-
-  }else if (voltagem > 2 && voltagem <= 3){
-
-    brilho = 150;
-
-  }else if (voltagem > 3){
-
-    brilho = 250;
-
-  }
-
-  Serial.println(voltagem);
-
-  // Atraso/delay o efeito cada mudança em uma quantidade de milisegundos
-  // 1000 equivale a 1 segundo e 500 equivale a 0,5 segundo
-  delay(100);
-}
-
-        </code>
-
-      </pre>
-
-      <h3>Após terminar, clique no botão save no canto superior esquerdo e salve como Acendendo LED com botão giratório</h3>
       
 		</main>
 
