@@ -57,132 +57,120 @@
       </nav>
 
 		<main>
-
-      <h1>Criando as primeiras páginas web</h1>
-
+      
+      <h1>Criação e estilização de parágrafos</h1>
+      
       <a href ="https://vscode.dev/" target ="_blank">Clique aqui para acessar o VS Code</a>
+      
+      <br>
 
-      <h2>Copiar o código abaixo no arquivo <codigo>index.html</codigo></h2>
-
+      <h2>Para criar um parágrafo ou mesmo uma frase basta:</h2>
+      
       <pre  class ="line-numbers" data-line ="">
 
         <code  class ="language-html" data-prismjs-copy ="Copiar Código">
 
-&lt;!DOCTYPE html&gt;
-
-&lt;html lang =&quot;pt-br&quot;&gt;
-
-    &lt;head&gt;
-
-        &lt;meta charset =&quot;utf-8&quot;&gt;
-
-        &lt;meta name =&quot;author&quot; content=&quot;Seu nome aqui&quot;&gt;
-
-        &lt;meta name =&quot;viewport&quot; content =&quot;width=device-width,initial-scale=1&quot;/&gt;
-
-        &lt;link rel =&quot;shortcut icon&quot; type =&quot;image/x-icon&quot; href =&quot;./images/favicon.ico&quot;&gt;
-
-        &lt;link rel =&quot;stylesheet&quot; type =&quot;text/css&quot; href =&quot;./index.css&quot;&gt;
-
-        &lt;script src=&quot;./index.js&quot;&gt;&lt;/script&gt;
-
-        &lt;title&gt;Coloque aqui um t&iacute;tulo para sua p&aacute;gina&lt;/title&gt;
-
-    &lt;/head&gt;
-
-    &lt;body&gt;
-
-          &lt;h1 id =&quot;h1&quot; onclick =&quot;mudar_conteudo_elemento()&quot;&gt; Resenha crítica do Livro: Chapeuzinho Nem T&atilde;o Vermelho&lt;/h1&gt;
-
-          &lt;h2&gt;Cap&iacute;tulo 1: Seu Nascimento&lt;/h2&gt;
-
-            &lt;h3&gt;Seus pais&lt;/h3&gt;
-
-                &lt;p&gt;Os pais da Chapeuzilnho vermelho nasceram...&lt;/p&gt;
-
-          &lt;h2&gt;Cap&iacute;tulo 2: Sua vovozinha&lt;/h2&gt;
-
-            &lt;h3&gt;De onde ela veio?&lt;/h3&gt;
-
-                &lt;p&gt;Natural dos Alpes Su&iacute;&ccedil;os, sua vovozinha era..&lt;/p&gt;
-
-          &lt;h2&gt;Cap&iacute;tulo 3: O Lobo-mau&lt;/h2&gt;
-
-            &lt;h3&gt;O maior vil&atilde;o da Hist&oacute;ria&lt;/h3&gt;
-
-                &lt;p&gt;Esse Lobo-mau era t&atilde;o mal&eacute;volo que certa feita...&lt;/p&gt;
-
-    &lt;/body&gt;
-
-&lt;/html&gt;
+          &lt;p&gt;Frase criada&lt;/p&gt;
 
         </code>
 
       </pre>
-
-      <br>
-      
-      <h3>Não esqueça de colocar seu nome na linha 9 e alterar o título da página na linha 19</h3>
       
       <br>
 
-      <h2>Copiar o código abaixo no arquivo <codigo>index.css</codigo></h2>
+      <h2>Resultado:</h2>
 
-      <pre  class ="line-numbers" data-line ="">
-
-        <code  class ="language-css" data-prismjs-copy ="Copiar Código">
-
-          h1{
-
-          color: blue;
-
-          background-color: yellow;
-          }
-
-          h2{
-          color: red;
-
-          background-color: gray;
-
-          }
-
-          h3{
-
-          color: yellow;
-
-          background-color: brown;
-
-          }
-
-          p{
-
-            color: gray;
-
-            background-color: magenta;
-          }
-
-        </code>
-
-      </pre>
-
+      <p>Frase criada</p>
+      
       <br>
+      
+      <h2>É possível fazer múltiplas ações com um parágrafo. Exemplo:</h2>
+      
+      <br>
+      
+      <ul>
+      
+        <li>Mudar a cor</li>
 
-      <h2>Copiar o código abaixo no arquivo <codigo>index.js</codigo></h2>
+        <li>Mudar a fonte</li>
 
+        <li>Mudar o tamanho</li>
+
+        <li>Mudar a cor de fundo</li>
+
+        <li>Mudar a direção</li>
+
+        <li>Mudar a capitalização</li>
+
+        <li>Mudar o alinhamento</li>
+
+        <li>Mudar a decoração</li>
+
+        <li>Adicionar recuo</li>
+
+        <li>Adicionar sombra</li>
+        
+      </ul>
+      
+      <br>
+      
+      <h3>De agora em diante, será utilizado parágrafo da linha 31 que começa "Os pais da Chapéuzinho"  no arquivo <codigo>index.html</codigo></h3>
+  
+      <br>
+      
+      <h2>1. Adicione o seguinte identificador para esse parágrafo</h2>
+      
       <pre  class ="line-numbers" data-line ="">
 
-        <code  class ="language-js" data-prismjs-copy ="Copiar Código">
+        <code  class ="language-html" data-prismjs-copy ="">
 
-          function mudar_conteudo_elemento(){
-
-            document.getElementById("h1").innerHTML = "Hello Javascript!";
-
-          }
+           &lt;p id =&quot;paragrafo&quot;&gt;Os pais da Chap&eacute;uzinho vermelho nasceram...&lt;/p&gt;
 
         </code>
 
       </pre>
+      
+      <br>
+      
+      <h2>2. No arquivo <codigo>index.css</codigo> adicione o seguinte código:</h2>
+      
+      <pre  class ="line-numbers" data-line ="">
 
+        <code  class ="language-css" data-prismjs-copy ="">
+
+           #paragrafo{
+  
+          
+          }
+        </code>
+
+      </pre>
+      
+      <h3>Todo o código <codigo>css</codigo> deverá ser escrito entre as duas chaves, nas linhas vazias.</h3>
+      
+      <br>
+      
+      <h2>3. A primeira modificação com os <codigo>css</codigo> será alterar a capitalização, deixando todas as palavras maiúsculas. Adicione a seguinte porção de código entre as duas chaves:</h2>
+      
+      <pre  class ="line-numbers" data-line ="">
+
+        <code  class ="language-css" data-prismjs-copy ="">
+
+           text-transform: uppercase;
+        </code>
+
+      </pre>
+      
+      <h3>Salve o código e verifique se o parágrafo ficou todo maiúsculo.</h3>
+      
+      <video controls>
+
+        <source src="/videos/uppercase.mp4" type="video/mp4">
+
+        Seu navegador não suporta o vídeo :(
+
+      </video>
+      
 		</main>
 
     <footer id ="última_atualização">
