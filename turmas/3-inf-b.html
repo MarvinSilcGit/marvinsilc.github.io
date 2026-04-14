@@ -74,6 +74,92 @@
 
       </video>
 
+      <h2>2. Adicione o código abaixo no projeto</h2>
+
+      <pre  class ="line-numbers" data-line ="">
+
+          <code  class ="language-Arduino"  data-prismjs-copy ="Copiar Código">/*
+ * HC-SR04 example sketch
+ *
+ * https://create.arduino.cc/projecthub/Isaac100/getting-started-with-the-hc-sr04-ultrasonic-sensor-036380
+ *
+ * by Isaac100
+ */
+int led = 10;         // O Pino ao qual o LED está conectado
+
+int brilho = 0;      // O nível de brilho do LED. 0 é o mínimo e 255 é o máximo
+
+const int pino_trig = 4; // Numeração o pino trig que está na placa
+
+const int pino_echo = 5; // Numeração o pino echo que está na placa
+
+float duracao, distancia;
+
+void setup() {
+  pinMode(led, OUTPUT);
+  
+  pinMode(pino_trig, OUTPUT);
+
+  pinMode(pino_echo, INPUT);
+  
+  Serial.begin(9600);
+}
+
+void loop() {
+
+  digitalWrite(pino_trig, LOW);
+  delayMicroseconds(2);
+
+  digitalWrite(pino_trig, HIGH);
+  delayMicroseconds(10);
+  
+  digitalWrite(pino_trig, LOW);
+
+  duracao = pulseIn(pino_echo, HIGH);
+
+  distancia = (duracao * 0.0343) / 2;
+  
+  Serial.print("Distância: ");
+
+  Serial.print(distancia);
+
+  Serial.println(" CM");
+
+  if (distancia > 0 && voltagem < 2){
+
+    digitalWrite(LED_BUILTIN, HIGH);
+    //delay(1000);
+  }else if (voltagem > 2 && voltagem < 3){
+
+    tone(buzzer, 1300, 500);
+    delay(500);
+    digitalWrite(LED_BUILTIN, LOW);
+    //delay(1000);
+  }else{
+
+    tone(buzzer, 2000, 500);
+    delay(500);
+    digitalWrite(LED_BUILTIN, HIGH);
+    //delay(1000);
+  }
+
+  delay(500);
+}
+          </code>
+
+      </pre>
+      
+      <br>
+      
+      <h2>Adicionando o sensor ultrasônico</h2>
+      
+      <video controls>
+
+        <source src="/videos/nano2.mp4" type="video/mp4">
+
+        Seu navegador não suporta o vídeo :(
+
+      </video>
       
 		</main>
 
