@@ -79,6 +79,7 @@
       <pre  class ="line-numbers" data-line ="">
 
           <code  class ="language-Arduino"  data-prismjs-copy ="Copiar Código">/*
+/*
  * HC-SR04 example sketch
  *
  * https://create.arduino.cc/projecthub/Isaac100/getting-started-with-the-hc-sr04-ultrasonic-sensor-036380
@@ -97,53 +98,55 @@ float duracao, distancia;
 
 void setup() {
   pinMode(led, OUTPUT);
-  
+
   pinMode(pino_trig, OUTPUT);
 
   pinMode(pino_echo, INPUT);
-  
+
   Serial.begin(9600);
 }
 
 void loop() {
+
+  analogWrite(led, brilho);
 
   digitalWrite(pino_trig, LOW);
   delayMicroseconds(2);
 
   digitalWrite(pino_trig, HIGH);
   delayMicroseconds(10);
-  
+
   digitalWrite(pino_trig, LOW);
 
   duracao = pulseIn(pino_echo, HIGH);
 
   distancia = (duracao * 0.0343) / 2;
-  
+
+  if ((duracao * 0.0343) / 2 < 5){
+
+    brilho = 200;
+
+  }else if ((duracao * 0.0343) / 2 < 10){
+
+    brilho = 80;
+
+  }else if ((duracao * 0.0343) / 2 < 13){
+
+    brilho = 200;
+
+  }else{
+
+    brilho = 0;
+  }
+
+
   Serial.print("Distância: ");
 
   Serial.print(distancia);
 
   Serial.println(" CM");
 
-  if (distancia > 0 && voltagem < 2){
-
-    digitalWrite(LED_BUILTIN, HIGH);
-    //delay(1000);
-  }else if (voltagem > 2 && voltagem < 3){
-
-    tone(buzzer, 1300, 500);
-    delay(500);
-    digitalWrite(LED_BUILTIN, LOW);
-    //delay(1000);
-  }else{
-
-    tone(buzzer, 2000, 500);
-    delay(500);
-    digitalWrite(LED_BUILTIN, HIGH);
-    //delay(1000);
-  }
-
-  delay(500);
+  delay(200);
 }
           </code>
 
