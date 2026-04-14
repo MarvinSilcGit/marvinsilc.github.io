@@ -86,9 +86,8 @@
  *
  * by Isaac100
  */
-int led = 10;         // O Pino ao qual o LED está conectado
 
-int brilho = 0;      // O nível de brilho do LED. 0 é o mínimo e 255 é o máximo
+#define buzzer 10
 
 const int pino_trig = 4; // Numeração o pino trig que está na placa
 
@@ -97,7 +96,8 @@ const int pino_echo = 5; // Numeração o pino echo que está na placa
 float duracao, distancia;
 
 void setup() {
-  pinMode(led, OUTPUT);
+
+  pinMode(buzzer, OUTPUT);
 
   pinMode(pino_trig, OUTPUT);
 
@@ -107,8 +107,6 @@ void setup() {
 }
 
 void loop() {
-
-  analogWrite(led, brilho);
 
   digitalWrite(pino_trig, LOW);
   delayMicroseconds(2);
@@ -124,19 +122,19 @@ void loop() {
 
   if ((duracao * 0.0343) / 2 < 5){
 
-    brilho = 200;
+    tone(buzzer, 1500, 2000);
 
   }else if ((duracao * 0.0343) / 2 < 10){
 
-    brilho = 80;
+    tone(buzzer, 1000, 2000);
 
   }else if ((duracao * 0.0343) / 2 < 13){
 
-    brilho = 200;
+    tone(buzzer, 500, 2000);
 
   }else{
 
-    brilho = 0;
+    tone(buzzer, 200, 2000);
   }
 
 
