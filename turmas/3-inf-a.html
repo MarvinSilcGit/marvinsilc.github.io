@@ -60,68 +60,19 @@
 
 		<main>
 
-      <h1>Criando as primeiras páginas web</h1>
+      <h1>Criação e estilização de parágrafos</h1>
 
       <a href ="https://vscode.dev/" target ="_blank">Clique aqui para acessar o VS Code</a>
 
-      <h2>Alterando o idioma do programa e Acessando a conta do Github</h2>
-
-      <video width="960" height="540" controls>
-
-        <source src="/videos/idioma.mp4" type="video/mp4">
-
-        Seu navegador não suporta o vídeo :(
-
-      </video>
-
       <br>
 
-      <h2>Arquivos básicos de toda página web</h2>
-
-      <video width="960" height="540" controls>
-
-        <source src="/videos/arquivos.mp4" type="video/mp4">
-
-        Seu navegador não suporta o vídeo :(
-
-      </video>
-
-      <br>
-
-      <h2>Copie o código abaixo dentro do arquivo <codigo>index.html</codigo></h2>
+      <h2>Para criar um parágrafo ou mesmo uma frase basta:</h2>
 
       <pre  class ="line-numbers" data-line ="">
 
         <code  class ="language-html" data-prismjs-copy ="Copiar Código">
 
-&lt;!DOCTYPE html&gt;
-
-&lt;html lang =&quot;pt-br&quot;&gt;
-
-    &lt;head&gt;
-
-        &lt;meta charset =&quot;utf-8&quot;&gt;
-
-        &lt;meta name =&quot;author&quot; content=&quot;Seu nome aqui&quot;&gt;
-
-        &lt;meta name =&quot;viewport&quot; content =&quot;width=device-width,initial-scale=1&quot;/&gt;
-
-        &lt;link rel =&quot;shortcut icon&quot; type =&quot;image/x-icon&quot; href =&quot;./images/favicon.ico&quot;&gt;
-
-        &lt;link rel =&quot;stylesheet&quot; type =&quot;text/css&quot; href =&quot;./index.css&quot;&gt;
-
-        &lt;script src=&quot;./index.js&quot;&gt;&lt;/script&gt;
-
-        &lt;title&gt;Coloque aqui um t&iacute;tulo para sua p&aacute;gina&lt;/title&gt;
-
-    &lt;/head&gt;
-
-    &lt;body&gt;
-
-
-    &lt;/body&gt;
-
-&lt;/html&gt;
+          &lt;p&gt;Frase criada&lt;/p&gt;
 
         </code>
 
@@ -129,33 +80,250 @@
 
       <br>
 
-      <h3>Não esqueça de colocar seu nome na linha 9 e alterar o título da página na linha 19</h3>
+      <h2>Resultado:</h2>
+
+      <p>Frase criada</p>
 
       <br>
 
-      <h2>Adicione a seguinte porção de código as linhas 23 e 26</h2>
-
-      <img src ="/images/html.png" width="960" height="540" alt ="Imagem de um código HTML" title ="Código HTML"/>
-
-      <h2>Adicione a seguinte código no arquivo <codigo>index.css</codigo></h2>
-
-      <img src ="/images/css.png" alt ="Imagem de um código CSS" title ="Código CSS"/>
-
-      <h2>Adicione a seguinte código no arquivo <codigo>index.js</codigo></h2>
-
-      <img src ="/images/js.png" alt ="Imagem de um código JavaScript" title ="Código JavaScript"/>
+      <h2>É possível fazer múltiplas ações com um parágrafo. Exemplo:</h2>
 
       <br>
 
-      <h2>Ao terminar, salve o seu progresso</h2>
+      <ul>
 
-      <video width="960" height="540" controls>
+        <li>Mudar a cor</li>
 
-        <source src="/videos/commit.mp4" type="video/mp4">
+        <li>Mudar a fonte</li>
+
+        <li>Mudar o tamanho</li>
+
+        <li>Mudar a cor de fundo</li>
+
+        <li>Mudar a capitalização</li>
+
+        <li>Mudar o alinhamento</li>
+
+        <li>Mudar a decoração</li>
+
+        <li>Adicionar recuo</li>
+
+        <li>Adicionar sombra</li>
+
+      </ul>
+
+      <br>
+
+      <h3>De agora em diante, será utilizado parágrafo da linha 31 que começa "Os pais da Chapéuzinho"  no arquivo <codigo>index.html</codigo></h3>
+
+      <br>
+
+      <h2>1. Adicione o seguinte identificador para esse parágrafo:</h2>
+
+      <pre  class ="line-numbers" data-line ="">
+
+        <code  class ="language-html" data-prismjs-copy ="">
+
+           &lt;p id =&quot;paragrafo&quot;&gt;Os pais da Chap&eacute;uzinho vermelho nasceram...&lt;/p&gt;
+
+        </code>
+
+      </pre>
+
+      <br>
+
+      <h2>2. No arquivo <codigo>index.css</codigo>, apague todo o código que existir adicione o seguinte código:</h2>
+
+      <pre  class ="line-numbers" data-line ="">
+
+        <code  class ="language-css" data-prismjs-copy ="">
+
+           #paragrafo{
+
+
+          }
+        </code>
+
+      </pre>
+
+      <h3>Todo o código <codigo>css</codigo> deverá ser escrito entre as duas chaves, nas linhas vazias.</h3>
+
+      <br>
+
+      <h2>3. A primeira modificação com os <codigo>css</codigo> será alterar a capitalização, deixando todas as palavras maiúsculas. Adicione a seguinte porção de código entre as duas chaves:</h2>
+
+      <pre  class ="line-numbers" data-line ="">
+
+        <code  class ="language-css" data-prismjs-copy ="">
+
+           text-transform: uppercase;
+
+        </code>
+
+      </pre>
+
+      <br>
+
+      <h3>Salve o código e verifique se o parágrafo ficou todo maiúsculo.</h3>
+
+      <video controls>
+
+        <source src="/videos/uppercase.mp4" type="video/mp4">
 
         Seu navegador não suporta o vídeo :(
 
       </video>
+
+      <br>
+
+      <h2>4. A segunda mudança agora é o tamanho da fonte do parágrafo. Escolha um valor entre 1em e 10em, que não seja o mesmo do de baixo</h2>
+
+      <pre  class ="line-numbers" data-line ="">
+
+        <code  class ="language-css" data-prismjs-copy ="">
+
+          text-transform: uppercase;
+          font-size: 3em;
+
+        </code>
+
+      </pre>
+
+      <br>
+
+      <h3>Salve o código e verifique se o parágrafo mudou de tamanho.</h3>
+
+      <br>
+
+      <h2>5. A terceira mudança é alterar a cor do parágrafo</h2>
+
+      <pre  class ="line-numbers" data-line ="">
+
+        <code  class ="language-css" data-prismjs-copy ="">
+
+          text-transform: uppercase;
+          font-size: 3em;
+          color: lightgray;
+
+        </code>
+
+      </pre>
+
+      <br>
+
+      <h3>Salve o código e verifique se o parágrafo ficou centralizado.</h3>
+
+      <br>
+
+      <h2>6. A quarta mudança é alterar a fonte</h2>
+
+      <pre  class ="line-numbers" data-line ="">
+
+        <code  class ="language-css" data-prismjs-copy ="">
+
+          text-transform: uppercase;
+          font-size: 3em;
+          color: lightgray;
+          font-family: Lucida Console;
+
+        </code>
+
+      </pre>
+
+      <br>
+
+      <h3>Salve o código e verifique se o parágrafo mudou de fonte.</h3>
+
+      <br>
+
+      <h2>7. A quinta mudança é adicionar recúo ao texto. Escolha um valor entre 0.5em e 3em.</h2>
+
+      <pre  class ="line-numbers" data-line ="">
+
+        <code  class ="language-css" data-prismjs-copy ="">
+
+          text-transform: uppercase;
+          font-size: 3em;
+          color: lightgray;
+          font-family: Lucida Console;
+          text-indent: 1.2em;
+
+        </code>
+
+      </pre>
+
+      <br>
+
+      <h3>Salve o código e verifique se o parágrafo mudou de fonte.</h3>
+
+      <br>
+
+      <h2>8. A sexta mudança é adicionar sombras ao parágrafo.</h2>
+
+      <pre  class ="line-numbers" data-line ="">
+
+        <code  class ="language-css" data-prismjs-copy ="">
+
+          text-transform: uppercase;
+          font-size: 3em;
+          color: lightgray;
+          font-family: Lucida Console;
+          text-indent: 1.2em;
+          text-shadow: 1px 1px 1px red;
+
+        </code>
+
+      </pre>
+
+      <br>
+
+      <h3>Salve o código e verifique se uma sombra vermelha foi adicionada.</h3>
+
+      <br>
+
+      <h2>9. A sétima mudança é adicionar efeitos na linha do parágrafo</h2>
+
+      <pre  class ="line-numbers" data-line ="">
+
+        <code  class ="language-css" data-prismjs-copy ="">
+
+          text-transform: uppercase;
+          font-size: 3em;
+          color: lightgray;
+          font-family: Lucida Console;
+          text-indent: 1.2em;
+          text-shadow: 1px 1px 1px red;
+          text-decoration-line: underline;
+          text-decoration-style: solid;
+          text-decoration-color: blue;
+          text-decoration-thickness: 0.2em;
+
+        </code>
+
+      </pre>
+
+      <br>
+
+      <h3>Salve o código e verifique se o efeito na linha foi adicionado</h3>
+
+      <h2>10. A oitava mudança é agora no arquivo <codigo>index.js</codigo>. Dessa vez o javaScript irá alterar o alinhamento do texto para a direita sempre que o parágrafo for clicado pela primeira vez</h2>
+
+      <pre  class ="line-numbers" data-line ="">
+
+        <code  class ="language-js" data-prismjs-copy ="">
+
+function mudar_estilo(){
+
+document.getElementById("paragrafo").style.textAlign = "right";
+}
+
+        </code>
+
+      </pre>
+
+      <br>
+
+      <h3>Salve o código e verifique se o efeito na linha foi adicionado</h3>
 
 		</main>
 
