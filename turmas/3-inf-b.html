@@ -68,7 +68,7 @@
 
       <video controls>
 
-        <source src="/videos/nano1.mp4" type="video/mp4">
+        <source src="/videos/7-segmentos1.mp4" type="video/mp4">
 
         Seu navegador não suporta o vídeo :(
 
@@ -79,72 +79,131 @@
       <pre  class ="line-numbers" data-line ="">
 
           <code  class ="language-Arduino"  data-prismjs-copy ="Copiar Código">/*
-/*
- * HC-SR04 example sketch
- *
- * https://create.arduino.cc/projecthub/Isaac100/getting-started-with-the-hc-sr04-ultrasonic-sensor-036380
- *
- * by Isaac100
- */
+/*******************************************************************************
+* RoboCore Kit Iniciante V8 para Arduino - Display de 7 Segmentos
+* Mostrar uma contagem de 0 a 9 em um Display de 7 Segmentos.
+*******************************************************************************/
 
-#define buzzer 10
-
-const int pino_trig = 4; // Numeração o pino trig que está na placa
-
-const int pino_echo = 5; // Numeração o pino echo que está na placa
-
-float duracao, distancia;
+// pinos onde cada um dos segmentos estão conectados:
+const int pino_a = 12; 
+const int pino_b = 11; 
+const int pino_c = 10; 
+const int pino_d = 9; 
+const int pino_e = 8; 
+const int pino_f = 6; 
+const int pino_g = 7; 
 
 void setup() {
-
-  pinMode(buzzer, OUTPUT);
-
-  pinMode(pino_trig, OUTPUT);
-
-  pinMode(pino_echo, INPUT);
-
-  Serial.begin(9600);
+  // configura os pinos de cada segmento como saída:
+  pinMode(pino_a, OUTPUT);
+  pinMode(pino_b, OUTPUT);
+  pinMode(pino_c, OUTPUT);
+  pinMode(pino_d, OUTPUT);
+  pinMode(pino_e, OUTPUT);
+  pinMode(pino_f, OUTPUT);
+  pinMode(pino_g, OUTPUT);
 }
 
 void loop() {
+  // acende os segmentos necessários para formar o número 0 (zero):
+  digitalWrite(pino_a, HIGH);
+  digitalWrite(pino_b, HIGH);
+  digitalWrite(pino_c, HIGH);
+  digitalWrite(pino_d, HIGH);
+  digitalWrite(pino_e, HIGH);
+  digitalWrite(pino_f, HIGH);
+  digitalWrite(pino_g, LOW);
+  delay(1000); // aguarda 1 segundo
+  
+  // acende os segmentos necessários para formar o número 1 (um):
+  digitalWrite(pino_a, LOW);
+  digitalWrite(pino_b, HIGH);
+  digitalWrite(pino_c, HIGH);
+  digitalWrite(pino_d, LOW);
+  digitalWrite(pino_e, LOW);
+  digitalWrite(pino_f, LOW);
+  digitalWrite(pino_g, LOW);
+  delay(1000); // aguarda 1 segundo
 
-  digitalWrite(pino_trig, LOW);
-  delayMicroseconds(2);
+  // acende os segmentos necessários para formar o número 2 (dois):
+  digitalWrite(pino_a, HIGH);
+  digitalWrite(pino_b, HIGH);
+  digitalWrite(pino_c, LOW);
+  digitalWrite(pino_d, HIGH);
+  digitalWrite(pino_e, HIGH);
+  digitalWrite(pino_f, LOW);
+  digitalWrite(pino_g, HIGH);
+  delay(1000); // aguarda 1 segundo
 
-  digitalWrite(pino_trig, HIGH);
-  delayMicroseconds(10);
+  // acende os segmentos necessários para formar o número 3 (três):
+  digitalWrite(pino_a, HIGH);
+  digitalWrite(pino_b, HIGH);
+  digitalWrite(pino_c, HIGH);
+  digitalWrite(pino_d, HIGH);
+  digitalWrite(pino_e, LOW);
+  digitalWrite(pino_f, LOW);
+  digitalWrite(pino_g, HIGH);
+  delay(1000); // aguarda 1 segundo
 
-  digitalWrite(pino_trig, LOW);
+  // acende os segmentos necessários para formar o número 4 (quatro):
+  digitalWrite(pino_a, LOW);
+  digitalWrite(pino_b, HIGH);
+  digitalWrite(pino_c, HIGH);
+  digitalWrite(pino_d, LOW);
+  digitalWrite(pino_e, LOW);
+  digitalWrite(pino_f, HIGH);
+  digitalWrite(pino_g, HIGH);
+  delay(1000); // aguarda 1 segundo
 
-  duracao = pulseIn(pino_echo, HIGH);
+  // acende os segmentos necessários para formar o número 5 (cinco):
+  digitalWrite(pino_a, HIGH);
+  digitalWrite(pino_b, LOW);
+  digitalWrite(pino_c, HIGH);
+  digitalWrite(pino_d, HIGH);
+  digitalWrite(pino_e, LOW);
+  digitalWrite(pino_f, HIGH);
+  digitalWrite(pino_g, HIGH);
+  delay(1000); // aguarda 1 segundo
 
-  distancia = (duracao * 0.0343) / 2;
+  // acende os segmentos necessários para formar o número 6 (seis):
+  digitalWrite(pino_a, LOW);
+  digitalWrite(pino_b, LOW);
+  digitalWrite(pino_c, HIGH);
+  digitalWrite(pino_d, HIGH);
+  digitalWrite(pino_e, HIGH);
+  digitalWrite(pino_f, HIGH);
+  digitalWrite(pino_g, HIGH);
+  delay(1000); // aguarda 1 segundo
 
-  if ((duracao * 0.0343) / 2 < 5){
+  // acende os segmentos necessários para formar o número 7 (sete):
+  digitalWrite(pino_a, HIGH);
+  digitalWrite(pino_b, HIGH);
+  digitalWrite(pino_c, HIGH);
+  digitalWrite(pino_d, LOW);
+  digitalWrite(pino_e, LOW);
+  digitalWrite(pino_f, LOW);
+  digitalWrite(pino_g, LOW);
+  delay(1000); // aguarda 1 segundo
 
-    tone(buzzer, 1500, 2000);
+  // acende os segmentos necessários para formar o número 8 (oito):
+  digitalWrite(pino_a, HIGH);
+  digitalWrite(pino_b, HIGH);
+  digitalWrite(pino_c, HIGH);
+  digitalWrite(pino_d, HIGH);
+  digitalWrite(pino_e, HIGH);
+  digitalWrite(pino_f, HIGH);
+  digitalWrite(pino_g, HIGH);
+  delay(1000); // aguarda 1 segundo
 
-  }else if ((duracao * 0.0343) / 2 < 10){
-
-    tone(buzzer, 1000, 2000);
-
-  }else if ((duracao * 0.0343) / 2 < 13){
-
-    tone(buzzer, 500, 2000);
-
-  }else{
-
-    tone(buzzer, 200, 2000);
-  }
-
-
-  Serial.print("Distância: ");
-
-  Serial.print(distancia);
-
-  Serial.println(" CM");
-
-  delay(200);
+  // acende os segmentos necessários para formar o número 9 (nove):
+  digitalWrite(pino_a, HIGH);
+  digitalWrite(pino_b, HIGH);
+  digitalWrite(pino_c, HIGH);
+  digitalWrite(pino_d, LOW);
+  digitalWrite(pino_e, LOW);
+  digitalWrite(pino_f, HIGH);
+  digitalWrite(pino_g, HIGH);
+  delay(1000); // aguarda 1 segundo
 }
           </code>
 
@@ -152,11 +211,11 @@ void loop() {
       
       <br>
       
-      <h2>3. Adicionando o sensor ultrasônico</h2>
+      <h2>3. Adicionando todos os componentes</h2>
       
       <video controls>
 
-        <source src="/videos/nano2.mp4" type="video/mp4">
+        <source src="/videos/7-segmentos2.mp4" type="video/mp4">
 
         Seu navegador não suporta o vídeo :(
 
