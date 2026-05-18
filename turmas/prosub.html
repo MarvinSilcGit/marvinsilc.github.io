@@ -60,57 +60,101 @@
 
 		<main>
 
-      <h1>Instalação e configuração do VS Code: Editor de Textos para Web</h1>
+<h1>Código para iluminar um led com o Arduino</h1>
 
-      <h2>Passo 1: Baixando o Programa</h2>
+      <br>
 
-      <video controls>
+      <a href ="https://wokwi.com/" target ="_blank">Clique aqui para acessar o Wokwi</a>
 
-        <source src="/videos/baixando.mp4" type="video/mp4">
+      <h2>Configuração básica do wokwi</h2>
+
+      <video width="960" height="540" controls>
+
+        <source src="/videos/iniciando-wokwi.mp4" type="video/mp4">
+
+        Seu navegador não suporta o vídeo :(
 
       </video>
 
       <br>
 
-      <h2>Passo 2: Instalando o programa</h2>
+      <h2>Digite o código abaixo no wokwi</h2>
 
-      <video controls>
+      <pre id ="code_block" class ="line-numbers" data-line ="">
 
-        <source src="/videos/instalando.mp4" type="video/mp4">
+        <code id ="teste" class ="language-c" data-prismjs-copy ="Copiar Código">
+int led = 9;         // O Pino ao qual o LED está conectado
+int brilho = 0;      // O nível de brilho do LED. 0 é o mínimo e 255 é o máximo
+int quantidade_mudanca = 5;  // Quanto níveis o LED vai diminuindo ou aumentando
+
+// O bloco SETUP onde o código executa
+void setup() {
+
+  // Use pinMode para que o led esteja no modo OUTPUT/Saída
+  pinMode(led, OUTPUT);
+}
+
+// O bloco LOOP que faz o código se repetir infinitamente
+void loop() {
+
+  // Define o nível de brilho do LED
+  analogWrite(led, brilho);
+
+  // Muda o brilho para a próxima que LOOP se repetir. Nesse caso, irá aumentar
+  brilho = brilho + quantidade_mudanca;
+
+  // Altera a direção do efeito quando o brilho é maior que 255 ou menor que 0;
+  if (brilho <= 0 || brilho >= 255) {
+    quantidade_mudanca = - quantidade_mudanca;
+  }
+
+  // Atraso/delay o efeito cada mudança em uma quantidade de milisegundos
+
+  // 1000 equivale a 1 segundo e 500 equivale a 0,5 segundo
+
+  delay(30);
+}
+
+        </code>
+
+      </pre>
+
+      <br>
+
+      <h2>Conectando os componentes: LED e Arduino</h2>
+
+      <video width="960" height="540" controls>
+
+        <source src="/videos/arduino-led.mp4" type="video/mp4">
+
+        Seu navegador não suporta o vídeo :(
 
       </video>
 
-      <h2>Passo 3: Acessando a Conta do Github</h2>
+      <br>
 
-      <video controls>
+      <h2>Salvando o projeto</h2>
 
-        <source src="/videos/acessando.mp4" type="video/mp4">
+      <video width="960" height="540" controls>
 
-      </video>
+        <source src="/videos/arduino-led1.mp4" type="video/mp4">
 
-      <h2>Passo 4: Alterando o idioma e instalando extensão</h2>
-
-      <video controls>
-
-        <source src="/videos/configurando.mp4" type="video/mp4">
+        Seu navegador não suporta o vídeo :(
 
       </video>
 
-      <h2>Passo 5: Testando a extensão</h2>
+      <h3>Avaliando foco</h3>
 
-      <video controls>
+      <ol>
+        <li>Mude o LED da posição 9 para 10, tanto no código quanto no simulador. Mantenha o GND inalterado.</li>
 
-        <source src="/videos/testando.mp4" type="video/mp4">
+        <li>Aumente a quantidade de mudança da luminosidade do LED para 15.</li>
 
-      </video>
+        <li>Altere o atraso de mudança da luminosidade para 60.</li>
 
-      <h2>Passo 6: Integrando Github com VS Code</h2>
+        <li>Depois que terminar as três de cima, vá até a mesa para testar seu conhecimento.</li>
 
-      <video controls>
-
-        <source src="/videos/integrando.mp4" type="video/mp4">
-
-      </video>
+      </ol>
       
 		</main>
 
