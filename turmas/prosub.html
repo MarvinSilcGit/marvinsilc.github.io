@@ -176,56 +176,57 @@ void loop() {
           <pre id ="code_block" class ="line-numbers" data-line ="">
 
             <code id ="teste" class ="language-c" data-prismjs-copy ="Copiar Código">
-    int led = 10;         // O Pino ao qual o LED está conectado
-    int brilho = 0;      // O nível de brilho do LED. 0 é o mínimo e 255 é o máximo
+int led = 10;         // O Pino ao qual o LED está conectado
+int brilho = 0;      // O nível de brilho do LED. 0 é o mínimo e 255 é o máximo
 
-    // O bloco SETUP onde o código executa
-    void setup() {
+// O bloco SETUP onde o código executa
+void setup() {
+  Serial.begin(9600);
+  
+  // Use pinMode para que o led esteja no modo OUTPUT/Saída
+  pinMode(led, OUTPUT);
+}
 
-      // Use pinMode para que o led esteja no modo OUTPUT/Saída
-      pinMode(led, OUTPUT);
-    }
+// O bloco LOOP que faz o código se repetir infinitamente
+void loop() {
+  // identifica a entrada o pino analógico sendo 0:
+  int valor_sensor = analogRead(A0);
 
-    // O bloco LOOP que faz o código se repetir infinitamente
-    void loop() {
-      // identifica a entrada o pino analógico sendo 0:
-      int valor_sensor = analogRead(A0);
+  // Converte a leitura analógica (que vai de 0 - 1023) para um voltagem entre (0v - 5V):
+  float voltagem = valor_sensor * (5.0 / 1023.0);
+  //exibe o valor que está sendo lido
 
-      // Converte a leitura analógica (que vai de 0 - 1023) para um voltagem entre (0v - 5V):
-      float voltagem = valor_sensor * (5.0 / 1023.0);
-      //exibe o valor que está sendo lido
+  // Define o nível de brilho do LED
+  analogWrite(led, brilho);
 
-      // Define o nível de brilho do LED
-      analogWrite(led, brilho);
+  if (voltagem == 0){
 
-      if (voltagem == 0){
+    brilho = 0;
 
-        brilho = 0;
+  }else if (voltagem > 0 && voltagem <= 1){
 
-      }else if (voltagem > 0 && voltagem <= 1){
+    brilho = 15;
 
-        brilho = 15;
+  }else if (voltagem > 1 && voltagem <= 2){
 
-      }else if (voltagem > 1 && voltagem <= 2){
+    brilho = 100;
 
-        brilho = 100;
+  }else if (voltagem > 2 && voltagem <= 3){
 
-      }else if (voltagem > 2 && voltagem <= 3){
+    brilho = 150;
 
-        brilho = 150;
+  }else if (voltagem > 3){  
 
-      }else if (voltagem > 3){
+    brilho = 250;
 
-        brilho = 250;
+  }
 
-      }
+  Serial.println(voltagem); // Linha onde a e leitura analógica da tensão é exibida
 
-      Serial.println(voltagem);
-
-      // Atraso/delay o efeito cada mudança em uma quantidade de milisegundos
-      // 1000 equivale a 1 segundo e 500 equivale a 0,5 segundo
-      delay(100);
-    }
+  // Atraso/delay o efeito cada mudança em uma quantidade de milisegundos
+  // 1000 equivale a 1 segundo e 500 equivale a 0,5 segundo
+  delay(100);
+}
 
             </code>
 
@@ -279,7 +280,7 @@ void loop() {
 
         <br>
 
-        <li>Na linha 6 adicione o seguinte código:</li>
+        <li>Na linha 7 adicione o seguinte código:</li>
 
           <pre id ="code_block" class ="line-numbers" data-line ="">
 
@@ -292,7 +293,7 @@ void loop() {
 
         <br>
 
-        <li>Clique com o lado esquerdo do mouse após o símbolo de ponto e vírgula da linha 25. Pressione a tecla <codigo>Enter</codigo> para adicionar uma nova linha abaixo. Nessa linha adicione o código abaixo:</li>
+        <li>Clique com o lado esquerdo do mouse após o símbolo de ponto e vírgula da linha 26. Pressione a tecla <codigo>Enter</codigo> para adicionar uma nova linha abaixo. Nessa linha adicione o código abaixo:</li>
 
           <pre id ="code_block" class ="line-numbers" data-line ="">
 
@@ -305,7 +306,7 @@ void loop() {
 
         <br>
 
-        <li>Clique com o lado esquerdo do mouse após o símbolo de ponto e vírgula da linha 30. Pressione a tecla <codigo>Enter</codigo> para adicionar uma nova linha abaixo. Nessa linha adicione o código abaixo:</li>
+        <li>Clique com o lado esquerdo do mouse após o símbolo de ponto e vírgula da linha 31. Pressione a tecla <codigo>Enter</codigo> para adicionar uma nova linha abaixo. Nessa linha adicione o código abaixo:</li>
 
           <pre id ="code_block" class ="line-numbers" data-line ="">
 
@@ -318,7 +319,7 @@ void loop() {
 
         <br>
 
-        <li>Clique com o lado esquerdo do mouse após o símbolo de ponto e vírgula da linha 35. Pressione a tecla <codigo>Enter</codigo> para adicionar uma nova linha abaixo. Nessa linha adicione o código abaixo:</li>
+        <li>Clique com o lado esquerdo do mouse após o símbolo de ponto e vírgula da linha 36. Pressione a tecla <codigo>Enter</codigo> para adicionar uma nova linha abaixo. Nessa linha adicione o código abaixo:</li>
 
           <pre id ="code_block" class ="line-numbers" data-line ="">
 
@@ -331,7 +332,7 @@ void loop() {
 
         <br>
 
-        <li>Clique com o lado esquerdo do mouse após o símbolo de ponto e vírgula da linha 40. Pressione a tecla <codigo>Enter</codigo> para adicionar uma nova linha abaixo. Nessa linha adicione o código abaixo:</li>
+        <li>Clique com o lado esquerdo do mouse após o símbolo de ponto e vírgula da linha 41. Pressione a tecla <codigo>Enter</codigo> para adicionar uma nova linha abaixo. Nessa linha adicione o código abaixo:</li>
 
         <pre id ="code_block" class ="line-numbers" data-line ="">
 
@@ -344,7 +345,7 @@ void loop() {
 
         <br>
 
-        <li>Clique com o lado esquerdo do mouse após o símbolo de ponto e vírgula da linha 45. Pressione a tecla <codigo>Enter</codigo> para adicionar uma nova linha abaixo. Nessa linha adicione o código abaixo:</li>
+        <li>Clique com o lado esquerdo do mouse após o símbolo de ponto e vírgula da linha 46. Pressione a tecla <codigo>Enter</codigo> para adicionar uma nova linha abaixo. Nessa linha adicione o código abaixo:</li>
 
         <pre id ="code_block" class ="line-numbers" data-line ="">
 
