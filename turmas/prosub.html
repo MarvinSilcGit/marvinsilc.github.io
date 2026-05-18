@@ -232,6 +232,146 @@ void loop() {
           </pre>
 
         <h2>3. Após terminar, clique no botão save no canto superior esquerdo e salve como Acendendo LED com botão giratório</h2>
+
+
+      <h1>Utilizando a protoboard</h1>
+
+      <a href ="https://wokwi.com/" target ="_blank">Clique aqui para acessar o Wokwi</a>
+
+      <p>A função da protoboard é extender as conexões de uma placa Arduino</p>
+
+      <h2>1. Adicione a protoboard ao projeto existente</h2>
+
+      <video width="960" height="540" controls>
+
+        <source src="/videos/protoboard.mp4" type="video/mp4">
+
+        Seu navegador não suporta o vídeo :(
+
+      </video>
+
+      <br>
+
+      <h2>2. Conectando os componentes a protoboard</h2>
+
+      <video width="960" height="540" controls>
+
+        <source src="/videos/conectando-protoboard.mp4" type="video/mp4">
+
+        Seu navegador não suporta o vídeo :(
+
+      </video>
+
+      <br>
+
+      <h2>3. Adicionando o código dentro do projeto existente</h2>
+
+      <ul>
+
+        <li>Na terceira linha adcione o código abaixo:</li>
+
+          <pre id ="code_block" class ="line-numbers" data-line ="">
+
+            <code id ="teste" class ="language-Arduino" data-prismjs-copy ="Copiar Código">
+              #define buzzer 8
+
+            </code>
+
+          </pre>
+
+        <br>
+
+        <li>Na linha 6 adicione o seguinte código:</li>
+
+          <pre id ="code_block" class ="line-numbers" data-line ="">
+
+            <code id ="teste" class ="language-Arduino"  data-prismjs-copy ="Copiar Código">
+              pinMode(buzzer, OUTPUT);
+
+            </code>
+
+          </pre>
+
+        <br>
+
+        <li>Clique com o lado esquerdo do mouse após o símbolo de ponto e vírgula da linha 25. Pressione a tecla <codigo>Enter</codigo> para adicionar uma nova linha abaixo. Nessa linha adicione o código abaixo:</li>
+
+          <pre id ="code_block" class ="line-numbers" data-line ="">
+
+            <code id ="teste" class ="language-Arduino"  data-prismjs-copy ="Copiar Código">
+              tone(buzzer, 0, 2000);
+
+            </code>
+
+          </pre>
+
+        <br>
+
+        <li>Clique com o lado esquerdo do mouse após o símbolo de ponto e vírgula da linha 30. Pressione a tecla <codigo>Enter</codigo> para adicionar uma nova linha abaixo. Nessa linha adicione o código abaixo:</li>
+
+          <pre id ="code_block" class ="line-numbers" data-line ="">
+
+            <code id ="teste" class ="language-Arduino"  data-prismjs-copy ="Copiar Código">
+            tone(buzzer, 1000, 2000);
+
+            </code>
+
+        </pre>
+
+        <br>
+
+        <li>Clique com o lado esquerdo do mouse após o símbolo de ponto e vírgula da linha 35. Pressione a tecla <codigo>Enter</codigo> para adicionar uma nova linha abaixo. Nessa linha adicione o código abaixo:</li>
+
+          <pre id ="code_block" class ="line-numbers" data-line ="">
+
+            <code id ="teste" class ="language-Arduino"  data-prismjs-copy ="Copiar Código">
+        tone(buzzer, 2000, 2000);
+
+            </code>
+
+        </pre>
+
+        <br>
+
+        <li>Clique com o lado esquerdo do mouse após o símbolo de ponto e vírgula da linha 40. Pressione a tecla <codigo>Enter</codigo> para adicionar uma nova linha abaixo. Nessa linha adicione o código abaixo:</li>
+
+        <pre id ="code_block" class ="line-numbers" data-line ="">
+
+        <code id ="teste" class ="language-Arduino"  data-prismjs-copy ="Copiar Código">
+        tone(buzzer, 3000, 2000);
+
+        </code>
+
+      </pre>
+
+        <br>
+
+        <li>Clique com o lado esquerdo do mouse após o símbolo de ponto e vírgula da linha 45. Pressione a tecla <codigo>Enter</codigo> para adicionar uma nova linha abaixo. Nessa linha adicione o código abaixo:</li>
+
+        <pre id ="code_block" class ="line-numbers" data-line ="">
+
+        <code id ="teste" class ="language-Arduino"  data-prismjs-copy ="Copiar Código">
+        tone(buzzer, 4000, 2000);
+
+        </code>
+
+      </pre>
+
+      </ul>
+
+      <br>
+
+      <h2>4. Agora, adicione o bipador sonoro</h2>
+
+      <video width="960" height="540" controls>
+
+        <source src="/videos/buzzer.mp4" type="video/mp4">
+
+        Seu navegador não suporta o vídeo :(
+
+      </video>
+
+      <h2>5. Após isso, execute o programa para verificar se não possui erros. Por fim, venha para a mesa testar na prática.</h2>
       
 		</main>
 
