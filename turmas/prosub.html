@@ -60,6 +60,8 @@
 
 		<main>
 
+      <a href ="https://wokwi.com/" target ="_blank">Clique aqui para acessar o simulador do Wokwi</a>
+
       <h1>Utilizando o sensor Ultrasônico para medir Distâncias</h1>
       
       <br>
@@ -172,6 +174,203 @@ void loop() {
         
         Seu navegador não suporta o vídeo :(
         
+      </video>
+
+      <br>
+
+      <h1>Utilizando o display de 7 segmentos como um contador</h1>
+
+            <h2>1. Criando um Projeto novo</h2>
+
+      <video controls>
+
+        <source src="/videos/7-segmentos1.mp4" type="video/mp4">
+
+        Seu navegador não suporta o vídeo :(
+
+      </video>
+
+      <h2>2. Adicione o código abaixo no projeto</h2>
+
+      <pre  class ="line-numbers" data-line ="">
+
+          <code  class ="language-Arduino"  data-prismjs-copy ="Copiar Código">/*
+/*******************************************************************************
+* RoboCore Kit Iniciante V8 para Arduino - Display de 7 Segmentos
+* Mostrar uma contagem de 0 a 9 em um Display de 7 Segmentos.
+*******************************************************************************/
+
+// pinos onde cada um dos segmentos estão conectados:
+const int pino_a = 12;
+const int pino_b = 11;
+const int pino_c = 10;
+const int pino_d = 9;
+const int pino_e = 8;
+const int pino_f = 6;
+const int pino_g = 7;
+
+void setup() {
+  // configura os pinos de cada segmento como saída:
+  pinMode(pino_a, OUTPUT);
+  pinMode(pino_b, OUTPUT);
+  pinMode(pino_c, OUTPUT);
+  pinMode(pino_d, OUTPUT);
+  pinMode(pino_e, OUTPUT);
+  pinMode(pino_f, OUTPUT);
+  pinMode(pino_g, OUTPUT);
+}
+
+void loop() {
+  // acende os segmentos necessários para formar o número 0 (zero):
+  digitalWrite(pino_a, HIGH);
+  digitalWrite(pino_b, HIGH);
+  digitalWrite(pino_c, HIGH);
+  digitalWrite(pino_d, HIGH);
+  digitalWrite(pino_e, HIGH);
+  digitalWrite(pino_f, HIGH);
+  digitalWrite(pino_g, LOW);
+  delay(1000); // aguarda 1 segundo
+
+  // acende os segmentos necessários para formar o número 1 (um):
+  digitalWrite(pino_a, LOW);
+  digitalWrite(pino_b, HIGH);
+  digitalWrite(pino_c, HIGH);
+  digitalWrite(pino_d, LOW);
+  digitalWrite(pino_e, LOW);
+  digitalWrite(pino_f, LOW);
+  digitalWrite(pino_g, LOW);
+  delay(1000); // aguarda 1 segundo
+
+  // acende os segmentos necessários para formar o número 2 (dois):
+  digitalWrite(pino_a, HIGH);
+  digitalWrite(pino_b, HIGH);
+  digitalWrite(pino_c, LOW);
+  digitalWrite(pino_d, HIGH);
+  digitalWrite(pino_e, HIGH);
+  digitalWrite(pino_f, LOW);
+  digitalWrite(pino_g, HIGH);
+  delay(1000); // aguarda 1 segundo
+
+  // acende os segmentos necessários para formar o número 3 (três):
+  digitalWrite(pino_a, HIGH);
+  digitalWrite(pino_b, HIGH);
+  digitalWrite(pino_c, HIGH);
+  digitalWrite(pino_d, HIGH);
+  digitalWrite(pino_e, LOW);
+  digitalWrite(pino_f, LOW);
+  digitalWrite(pino_g, HIGH);
+  delay(1000); // aguarda 1 segundo
+
+  // acende os segmentos necessários para formar o número 4 (quatro):
+  digitalWrite(pino_a, LOW);
+  digitalWrite(pino_b, HIGH);
+  digitalWrite(pino_c, HIGH);
+  digitalWrite(pino_d, LOW);
+  digitalWrite(pino_e, LOW);
+  digitalWrite(pino_f, HIGH);
+  digitalWrite(pino_g, HIGH);
+  delay(1000); // aguarda 1 segundo
+
+  // acende os segmentos necessários para formar o número 5 (cinco):
+  digitalWrite(pino_a, HIGH);
+  digitalWrite(pino_b, LOW);
+  digitalWrite(pino_c, HIGH);
+  digitalWrite(pino_d, HIGH);
+  digitalWrite(pino_e, LOW);
+  digitalWrite(pino_f, HIGH);
+  digitalWrite(pino_g, HIGH);
+  delay(1000); // aguarda 1 segundo
+
+  // acende os segmentos necessários para formar o número 6 (seis):
+  digitalWrite(pino_a, LOW);
+  digitalWrite(pino_b, LOW);
+  digitalWrite(pino_c, HIGH);
+  digitalWrite(pino_d, HIGH);
+  digitalWrite(pino_e, HIGH);
+  digitalWrite(pino_f, HIGH);
+  digitalWrite(pino_g, HIGH);
+  delay(1000); // aguarda 1 segundo
+
+  // acende os segmentos necessários para formar o número 7 (sete):
+  digitalWrite(pino_a, HIGH);
+  digitalWrite(pino_b, HIGH);
+  digitalWrite(pino_c, HIGH);
+  digitalWrite(pino_d, LOW);
+  digitalWrite(pino_e, LOW);
+  digitalWrite(pino_f, LOW);
+  digitalWrite(pino_g, LOW);
+  delay(1000); // aguarda 1 segundo
+
+  // acende os segmentos necessários para formar o número 8 (oito):
+  digitalWrite(pino_a, HIGH);
+  digitalWrite(pino_b, HIGH);
+  digitalWrite(pino_c, HIGH);
+  digitalWrite(pino_d, HIGH);
+  digitalWrite(pino_e, HIGH);
+  digitalWrite(pino_f, HIGH);
+  digitalWrite(pino_g, HIGH);
+  delay(1000); // aguarda 1 segundo
+
+  // acende os segmentos necessários para formar o número 9 (nove):
+  digitalWrite(pino_a, HIGH);
+  digitalWrite(pino_b, HIGH);
+  digitalWrite(pino_c, HIGH);
+  digitalWrite(pino_d, LOW);
+  digitalWrite(pino_e, LOW);
+  digitalWrite(pino_f, HIGH);
+  digitalWrite(pino_g, HIGH);
+  delay(1000); // aguarda 1 segundo
+}
+          </code>
+
+      </pre>
+
+      <br>
+
+      <h2>3. Adicionando todos os componentes</h2>
+
+      <video controls>
+
+        <source src="/videos/7-segmentos2.mp4" type="video/mp4">
+
+        Seu navegador não suporta o vídeo :(
+
+      </video>
+
+      <br>
+
+      <h2>4. Conectando o display</h2>
+
+      <video controls>
+
+        <source src="/videos/7-segmentos3.mp4" type="video/mp4">
+
+        Seu navegador não suporta o vídeo :(
+
+      </video>
+
+      <br>
+
+      <h2>5. Conectando o Resistor</h2>
+
+      <video controls>
+
+        <source src="/videos/7-segmentos4.mp4" type="video/mp4">
+
+        Seu navegador não suporta o vídeo :(
+
+      </video>
+
+      <br>
+
+      <h2>5. Testando display</h2>
+
+      <video controls>
+
+        <source src="/videos/7-segmentos5.mp4" type="video/mp4">
+
+        Seu navegador não suporta o vídeo :(
+
       </video>
       
 		</main>
