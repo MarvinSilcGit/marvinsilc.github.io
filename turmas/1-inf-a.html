@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+	<html lang ="pt-br">
+
+		<head>
+
+      <meta charset ="utf-8">
+
+      <meta name ="author" content ="Marvin Silc">
+
+      <meta name ="viewport" content ="width=device-width, initial-scale=1"/>
+
+      <meta name ="keywords" content ="Banco de dados">
+
+      <link rel ="shortcut icon" type ="image/x-icon" href ="/images/favicon.ico">
+
+      <link rel ="stylesheet" type ="text/css" href ="/index.css">
+
+      <link href ="/Prism.css" rel ="stylesheet"/>
+
+      <script src ="/Prism.js"></script>
+
+      <script src ="/index.js"></script>
+
+      <title>2º Informática A</title>
+
+		</head>
+
+	<body data-prismjs-copy-timeout ="1500">
+
+		<header>
+
+      <span id ="botao_abrir_menu" onclick ="abrir_menu_lateral()">&#9776;</span>
+
+      <img id ="botao_dark" onclick ="dark_mode()" src ="/images/day_night.png" height ="30px" width ="30px" alt ="Botão para alternar entre os modo claro e escuro">
+
+		</header>
+
+      <nav id ="navegar_esquerda">
+
+        <a id ="botao_fechar_menu" onclick ="fechar_menu_lateral()">&times;</a>
+
+        <a href ="/index.html">Início</a>
+
+        <a href ="/turmas/3-inf-a.html">3º INF-A</a>
+
+        <a href ="/turmas/3-inf-b.html">3º INF-B</a>
+
+        <a href ="/turmas/2-inf-a.html">2º INF-A</a>
+
+        <a href ="">1º INF-B</a>
+
+        <a href ="/turmas/prosub.html">PROSUB IV</a>
+
+        <a href ="/turmas/proeja.html">PROEJA I</a>
+
+      </nav>
+
+		<main>
+
+		</main>
+
+    <footer id ="última_atualização">
+
+      <p style ="display: inline">Última Modificação em: </p>
+
+      <p id ="last_mod" style ="display: inline"></p>
+
+      <script>
+
+        let ultima_modificacao = document.lastModified;
+
+        document.getElementById("last_mod").innerHTML = ultima_modificacao;
+
+      </script>
+
+    </footer>
+
+	</body>
+
+</html>
