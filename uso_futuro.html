@@ -656,3 +656,43 @@ void loop() {
 
       </pre>
     -->
+
+<!--
+
+substituindo imagens. Tentar utilizar um array para poder puxar de uma lista pré definida
+
+
+function changeImage() {
+
+    document.getElementById('myImage').src = 'images/eskof_bubble.jpg';
+
+}
+
+    <img id="myImage" src="image1.jpg" alt="Image" width="300">
+    <button onclick="changeImage()">Change Image</button>
+
+    <script>
+        function changeImage() {
+            document.getElementById('myImage').src = 'image2.jpg';
+        }
+    </script>
+
+
+Botão que faz a contagem de cliques
+<button id="botao">Clique para criar ficha</button>
+    <h3> Senha:
+
+        <p id="display">0</p>
+    </h3>
+    <script type="text/javascript">
+        let count = 0;
+        let botao = document.getElementById("botao");
+        let mostrar = document.getElementById("display");
+
+        botao.addEventListener("click", function () {
+            count++;
+            mostrar.innerHTML = count;
+        });
+
+    </script>
+-->
