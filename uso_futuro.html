@@ -695,4 +695,29 @@ Botão que faz a contagem de cliques
         });
 
     </script>
+
+    function gerar_numeros() {
+
+    let count = 0;
+    let botao = document.getElementById("botao");
+    let mostrar = document.getElementById("display");
+
+    botao.onclick = function() {
+        count++;
+        mostrar.innerHTML = count;
+    }
+
+}
+button{
+
+  display: block;
+  margin: 0 auto;
+}
+
+<button id="botao" onclick = "gerar_numeros()">Clique para criar ficha</button>
+
+      <h3>Senha:
+
+          <p id="display">0</p>
+      </h3>
 -->
