@@ -6,7 +6,7 @@
         <entry key="black">
           <value>
             <ToolEntry>
-              <option name="customPathToExecutable" value="\usr\bin\black" />
+              <option name="customPathToExecutable" value="/usr/bin/black" />
             </ToolEntry>
           </value>
         </entry>
