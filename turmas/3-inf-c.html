@@ -59,142 +59,171 @@
       </nav>
 
 		<main>
-<!--
-&lt;!DOCTYPE html&gt;
 
-&lt;html lang =&quot;pt-br&quot;&gt;
+      <pre id ="code_block" class ="line-numbers" data-line ="">
 
-    &lt;head&gt;
+        <code id ="teste" class ="language-css" data-prismjs-copy ="Copiar Código">
 
-        &lt;meta charset =&quot;utf-8&quot;&gt;
+body{
 
-        &lt;meta name =&quot;author&quot; content =&quot;Marvin Silc&quot;&gt;
+  margin: 0px;
+  scroll-behavior: smooth;
+  font-family: ;
+}
 
-        &lt;meta name =&quot;viewport&quot; content =&quot;width=device-width,initial-scale=1&quot;/&gt;
+header{
 
-        &lt;link rel =&quot;shortcut icon&quot; type =&quot;image/x-icon&quot; href =&quot;./images/favicon.ico&quot;&gt;
+  background-color: ;
+}
 
-        &lt;link rel =&quot;stylesheet&quot; type =&quot;text/css&quot; href =&quot;./salao.css&quot;&gt;
+#menu_secundario{
 
-        &lt;script src =&quot;./salao.js&quot;&gt;&lt;/script&gt;
+  display: flex;
+  justify-content: space-evenly;
+}
 
-        &lt;title&gt;Salão de Beleza Pimentinha&lt;/title&gt;
+#titulo{
 
-    &lt;/head&gt;
+  margin: 0px;
+  text-align: ;
+}
 
-    &lt;body&gt;
+#secao_1{
 
-        &lt;header&gt;
+  align-items: center;
+  background-color: #5A7CFA;
+  background-image: linear-gradient(to bottom, #5A7CFA, #000000);
+  color: ;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0px;
+}
 
-            &lt;nav id=&quot;menu_primario&quot;&gt;
+#titulo_2{
 
-                &lt;h1 id=&quot;titulo&quot;&gt;Salão de Beleza Pimentinha&lt;/h1&gt;
+  font-size: ;
+}
 
-            &lt;/nav&gt;
+#img1{
 
-        &lt;/header&gt;
+  border-radius: ;
+  box-shadow: 2px 2px 20px 2px red;
+  width: 100%;
+  height: auto;
+}
 
-        &lt;main&gt;
+#secao_2{
 
-            &lt;section id =&quot;secao_1&quot;&gt;
+  align-items: center;
+  background-color: #000000;
+  background-image: linear-gradient(to bottom, #000000, #802E42);
+  color: ;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0px;
+}
 
-                &lt;h2 id =&quot;titulo_2&quot;&gt;Bem-vindo(a) ao Pimentinha&lt;/h2&gt;
+#img2{
 
-                &lt;figure&gt;
+  border-radius: ;
+  box-shadow: 2px 2px 20px 2px red;
+  width: 100%;
+  height: auto;
+}
 
-                    &lt;img id=&quot;img1&quot; src=&quot;./images/img1.jpg&quot; alt=&quot;Olá&quot;&gt;
+#titulo_3{
 
-                &lt;/figure&gt;
+  text-align: ;
+  font-size: ;
+}
 
-            &lt;/section&gt;
+#secao_3{
 
-            &lt;section id =&quot;secao_2&quot;&gt;
+  background-color: #802E42;
+  background-image: linear-gradient(to bottom, #802E42, #FFFFFF);
+  color: ;
+  text-align: ;
+}
 
-                &lt;figure&gt;
+#secao_3_1{
 
-                    &lt;img id=&quot;img2&quot; src=&quot;./images/img2.avif&quot; alt=&quot;Olá&quot;&gt;
+  align-items: center;
+  display: flex;
+  justify-content: space-evenly;
+  margin: auto;
+}
 
-                &lt;/figure&gt;
+#titulo_4{
 
-                &lt;section id =&quot;secao_2_1&quot;&gt;
+  font-size: ;
+  margin: 0;
+}
 
-                    &lt;h2 id =&quot;titulo_3&quot;&gt;Um novo estilo para o seu cabelo&lt;/h2&gt;
+#titulo_4_1, #titulo_4_2, #titulo_4_3{
 
-                    &lt;p id =&quot;p1&quot;&gt;Não Guarde rancor, guarde dinheiro para vir se cuid&lt;/p&gt;
+  font-size: ;
+  margin: 0px;
+}
 
-                &lt;/section&gt;
+#img3{
 
-            &lt;/section&gt;
+  border-radius: ;
+  box-shadow: 2px 2px 20px 2px red;
+  width: 100%;
+  height: auto;
+}
 
-            &lt;section id =&quot;secao_3&quot;&gt;
+#secao_4{
 
-                &lt;h2 id=&quot;titulo_4&quot;&gt;Nossos serviços:&lt;/h2&gt;
+  display: flex;
+  justify-content: center;
+}
 
-                    &lt;section id =&quot;secao_3_1&quot;&gt;
+#img4{
 
-                        &lt;h3 id=&quot;titulo_4_1&quot;&gt;Cortes de Cabelo e Estilização&lt;/h3&gt;
+  border-radius: ;
+  box-shadow: 2px 2px 20px 2px red;
+  width: 100%;
+  height: auto;
+}
 
-                        &lt;h3 id=&quot;titulo_4_2&quot;&gt;Correção de Cor&lt;/h3&gt;
+#secao_5{
 
-                        &lt;figure&gt;
+  align-items: center;
+  color: ;
+  display: flex;
+  flex-direction: column;
+  margin: 0px;
+}
 
-                            &lt;img id =&quot;img3&quot; src=&quot;./images/img3.jpg&quot; alt =&quot; &quot;&gt;
+#titulo_5, #titulo_6{
 
-                        &lt;/figure&gt;
+  font-size: ;
+}
 
-                        &lt;h3 id=&quot;titulo_4_3&quot;&gt;Tratamento Capilar&lt;/h3&gt;
+#secao_6{
 
-                    &lt;/section&gt;
+  align-items: center;
+  color: ;
+  display: flex;
+  flex-direction: column;
+  margin: 0px;
+}
 
-            &lt;/section&gt;
+#p1{
 
-            &lt;section id =&quot;secao_4&quot;&gt;
+  font-size: ;
+  text-align: ;
+}
 
-                &lt;figure&gt;
+#p2, #p3, #p4, #p5, #p6, #p7{
 
-                    &lt;img id=&quot;img4&quot; src=&quot;./images/img4.jpg&quot; alt =&quot; &quot;&gt;
+  font-size: ;
+}
 
-                &lt;/figure&gt;
+        </code>
 
-            &lt;/section&gt;
-
-        &lt;/main&gt;
-
-        &lt;footer&gt;
-
-            &lt;section id =&quot;secao_5&quot;&gt;
-
-                &lt;h3 id=&quot;titulo_5&quot;&gt;Horário de Funcionamento:&lt;/h3&gt;
-
-                &lt;p id =&quot;p2&quot;&gt;Segunda: FECHADO&lt;/p&gt;
-
-                &lt;p id =&quot;p3&quot;&gt;Terça à Quinta: 9:00 - 18:00&lt;/p&gt;
-
-                &lt;p id =&quot;p4&quot;&gt;Sexta à Domingo: 9:00 - 21:00&lt;/p&gt;
-
-            &lt;/section&gt;
-
-            &lt;section id =&quot;secao_6&quot;&gt;
-
-                &lt;h3 id=&quot;titulo_6&quot;&gt;Nossas Redes Sociais&lt;/h3&gt;
-
-                &lt;p id =&quot;p5&quot;&gt;Instagram - @salao.Pimentinha&lt;/p&gt;
-
-                &lt;p id =&quot;p6&quot;&gt;WhatsApp - +5579993212321&lt;/p&gt;
-
-                &lt;p id =&quot;p7&quot;&gt;Facebook - salao.Pimentinha&lt;/p&gt;
-
-            &lt;/section&gt;
-
-        &lt;/footer&gt;
-
-    &lt;/body&gt;
-
-&lt;/html&gt;
-
-      -->
-
-      <img src ="/images/style.png" alt ="Imagem para verificação" style="justify-content: center;display: flex;margin: auto; border-radius: 20px;">
+      </pre>
 
 		</main>
 
